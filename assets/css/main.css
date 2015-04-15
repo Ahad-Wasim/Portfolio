@@ -1,0 +1,689 @@
+a{
+	text-decoration: none;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+
+/*	contact-form */
+
+.contact_form{
+}
+
+/*	contact-form */
+
+
+/* cool cat */
+
+.cool_cat-wrapper{
+	position:relative;
+	height:80%;
+	width:100%;
+}
+
+.cool_cat{
+	width:100%;
+	height:94%;
+}
+
+
+.firstname{
+	position:absolute;
+	top:35%;
+	left:34%;
+	font-family: 'Permanent Marker', cursive;
+	color:white;
+	font-size: 40px;
+	cursor: pointer;
+}
+.lastname{
+	position:absolute;
+	top:35%;
+	left:67%;
+	font-family: 'Permanent Marker', cursive;
+	color:white;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.cat_hire{
+	display:none;
+	border:2px solid black;
+	padding:5px 15px;
+	padding-bottom: 10px;
+	position:absolute;
+	top:15%;
+	left:4%;
+	font-family: 'Permanent Marker', cursive;
+	cursor: pointer;
+}
+.cat_hire h3{
+	font-size: 40px;	
+}
+
+
+/* cool cat */
+
+
+
+section{
+	position:relative;
+}
+
+
+
+/* Resume Section */
+.resume{
+	width:100%;
+	height:1100px;
+	display: table;
+}
+
+.headers{
+	margin-left: 3%;
+}
+
+.list{
+	margin-left: 5%;
+}
+
+.list ul{
+	display:inline-block;
+	font-size: 25px;
+}
+
+.resume_text{
+	font-size: 25px;
+	margin-top: 6%;
+	margin-left: 5%;
+}
+
+.resume_text p{
+	margin-top: 3%;
+}
+
+.moon_picture{
+	width:100%;
+}
+
+.description{
+	position:absolute;
+	top:0;
+	left:0;
+	font-size: 20px;
+	color:white;
+}
+
+.knowledge{
+	display: table-cell;
+	position:absolute;
+	top:10%;
+	right: 0;
+	width:40%;
+	height:100%;
+}
+
+.text{
+	display: table-cell;
+	width:60%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	color:white;
+	font-family: 'Ubuntu', sans-serif;	
+}
+
+.gray{
+	height:100%;	
+	width:100%;
+}
+
+.lz_background{
+	background:white;
+	padding:10px 15px;
+	display:inline-block;
+}
+.learningfuze{
+	width:300px;
+	height:50px;
+}
+
+.javascript{
+	height:200px;
+	margin-left: 15%;
+	margin-top: 5%;
+}
+
+.jQuery{
+	height:175px;
+	margin-top: 5%;
+}
+
+.css{
+	height:200px;
+	width:172px;
+}
+.html{
+	height: 200px;
+	width:237px;
+	margin-left:17%;
+}
+
+.bootstrap_logo{
+	height:185px;
+	width:200px;
+	margin-left: 4%;
+	margin-top: 5%;
+}
+
+.php{
+	height:182px;
+	width:244px;
+	margin-left: 11%;
+	margin-top: 5%;
+}
+
+.ajax{
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+/* Resume Section */
+
+
+
+
+
+
+
+/* Quote Section */
+
+.quote{
+	height:882px;
+}
+
+.cheetah{
+	width:100%;
+	height:100%;
+}
+
+
+.quote_text{
+	border:1px solid black;
+	position:absolute;
+	top:3%;
+	left:2%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.quote_text h3 {
+	font-size: 35px;
+}
+
+
+
+.picture{
+	margin-bottom: 3%;
+}
+
+/* Quote Section */
+
+
+
+
+/* More Info */
+
+.more_info{
+	width:100%;
+	height:500px	;
+}
+
+.text2{
+	width:100%;
+	height:100%;
+}
+
+
+.more_info_text{
+	position:absolute;
+	top:0;
+	left:0;
+	font-size: 25px;
+	color:white;
+}
+
+.xbox{
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+/* More Info */
+
+
+
+
+
+/* Last Quote */
+
+.last_quote{
+	width:100%;
+	height:700px;
+}
+
+.markTwain{
+	color:white;
+	position:absolute;
+	height:100%;
+	width:100%;
+	top: 0;
+	left:0;
+}
+
+.mkquote{
+	text-align: center;
+	position: relative;
+  	top: 30%;
+  	transform: translateY(-50%);
+}
+
+.work{
+	display:inline-block;
+}
+
+.work h4{
+	float: right;
+}
+
+.markTwain h3, .markTwain h4{
+	font-size: 3em;
+}
+
+
+
+
+/* Last Quote */
+
+
+
+
+
+
+/*		Footer   */
+
+footer{
+	position:relative;
+}
+
+.footer-img{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+}
+
+
+
+/*   Business LINKS  */
+
+.github{
+	font-size: 1.25em;
+	display:inline-block;
+	margin-right: 25px;
+	color:rgb(51, 51, 51);
+}
+
+.linkedIn{
+	font-size: 1.25em;
+	display:inline-block;
+	margin-right: 25px;
+	color:rgb(51, 51, 51);
+}
+
+
+.envelope{
+	font-size: 1.25em;
+	display:inline-block;
+	margin-right: 10px;
+	color:rgb(51, 51, 51);
+}
+
+.google{
+	font-size: 1.25em;
+	display:inline-block;
+	color:rgb(51, 51, 51);
+}
+
+.square-box_holder{
+	margin-top:2%;
+	display:inline-block;
+	float:right;
+}
+
+.hire{
+	margin-top:5%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:2px;
+	width:300px;
+	padding:10px;
+	color:white;
+	border:none;
+	background:red;
+	display:block;
+	font-size: 20px;
+}
+
+/*   Business LINKS  */
+
+/*		Footer   */
+
+
+
+
+
+
+
+/*media quieres*/
+
+/* Adjust the photo sizes on small screens  Cheetah */
+
+
+
+@media screen and (max-width: 1550px) {
+    .resume_text{
+		font-size: 20px;
+		margin-top: 6%;
+		margin-left: 5%;
+	}
+}
+
+
+@media screen and (max-width: 1330px) {
+	.list ul{
+		display:inline-block;
+		font-size: 20px;
+	}
+
+	.php{
+		height:160px;
+		width:220px;
+		margin-left: 11%;
+	}
+
+	.bootstrap_logo{
+		height:165px;
+		width:180px;
+	}
+
+
+	.javascript{
+		height:175px;
+		margin-left: 15%;
+	}
+
+	.jQuery{
+		height:175px;
+		width:150px;
+		margin-left:3% 
+	}
+
+	.css{
+		height:175px;
+		width:150px;
+	}
+	.html{
+		height: 175px;
+		width:200px;
+		margin-left:17%;
+	}
+
+
+    
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.php{
+		height:160px;
+		width:200px;
+		margin-left: 11%;
+		margin-top: 7%;
+	}
+
+	.bootstrap_logo{
+		height:150px;
+		width:160px;
+		margin-top: 7%;
+	}
+
+
+	.javascript{
+		height:170px;
+		margin-left: 15%;
+		margin-top: 7%;
+	}
+
+	.jQuery{
+		height:160px;
+		width:130px;
+		margin-left:3%; 
+		margin-top: 7%;
+	}
+
+	.css{
+		height:155px;
+		width:130px;
+	}
+	.html{
+		height: 155px;
+		width:190px;
+		margin-left:17%;
+	}
+    
+}
+
+
+
+
+@media screen and (max-width: 1170px) {
+    .firstname{
+		top:35%;
+		left:33%;
+	}
+	
+	.lastname{
+		
+		top:35%;
+		left:65%;
+	
+	}
+}
+
+
+@media screen and (max-width: 1170px) {
+    .bootstrap_logo{
+		height:130px;
+		width:140px;
+		margin-top: 7%;
+	}
+
+	.php{
+		height:140px;
+		width:180px;
+		margin-left: 11%;
+		margin-top: 7%;
+	}
+
+	.javascript{
+		height:155px;
+		margin-left: 15%;
+		margin-top: 7%;
+	}
+
+	.jQuery{
+		height:140px;
+		width:120px;
+		margin-left:3%; 
+		margin-top: 7%;
+	}
+
+	.css{
+		height:145px;
+		width:120px;
+	}
+	.html{
+		height: 145px;
+		width:170px;
+		margin-left:17%;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .hire {
+        display:none;
+
+    }
+
+    .footer2{
+    	display:block;
+    	height:100px;
+    	width:100%;
+    	background:red;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    .firstname{
+		top:35%;
+		left:31%;
+	}
+	
+	.lastname{
+		
+		top:35%;
+		left:63%;
+	}
+
+
+	.bootstrap_logo{
+		height:120px;
+		width:130px;
+		margin-top: 7%;
+	}
+
+	.php{
+		height:120px;
+		width:150px;
+		margin-left: 11%;
+		margin-top: 7%;
+	}
+
+	.javascript{
+		height:135px;
+		margin-left: 15%;
+		margin-top: 7%;
+	}
+
+	.jQuery{
+		height:130px;
+		width:110px;
+		margin-left:3%; 
+		margin-top: 7%;
+	}
+
+	.css{
+		height:125px;
+		width:110px;
+	}
+	.html{
+		height: 135px;
+		width:150px;
+		margin-left:17%;
+	}
+
+	.ajax{
+		height:125px;
+		width:200px;
+	}
+
+
+	.list ul{
+		display:inline-block;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+    .firstname{
+		font-size: 33px;
+
+	}
+	
+	.lastname{
+		font-size:33px;
+	}
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .firstname{
+    	left:31%;
+		font-size: 26px;
+
+	}
+	
+	.lastname{
+		left:64%;
+		font-size:26px;
+	}
+}
+
+
+@media screen and (max-width: 530px) {
+    .firstname{
+    	left:31%;
+		font-size: 26px;
+
+	}
+	
+	.lastname{
+		left:62%;
+		font-size:26px;
+	}
+
+	.quote_text h3 {
+ 		 font-size: 28px;
+	}	
+}
+
+
+@media screen and (max-width: 450px) {
+    .firstname{
+    	left:29%;
+		font-size: 26px;
+
+	}
+	
+	.lastname{
+		left:61%;
+		font-size:23px;
+	}
+}
+
