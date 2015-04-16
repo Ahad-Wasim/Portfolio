@@ -113,7 +113,7 @@
 					</ul>
 				</div>
 
-					
+				
 						
 						<div class = 'resume_text'>
 
@@ -157,36 +157,33 @@
 
 				
 			</div>
-
-
-
 				<div class = 'knowledge'>
 
 				
-					<img class = 'html' src = 'assets/images/html.png'>
-					<img class = 'css' src = 'assets/images/css.png'>
+					<img class = 'wow animated rotateInDownLeft html' src = 'assets/images/html.png'>
+					<img class = 'wow animated rotateInDownRight css' src = 'assets/images/css.png'>
 				
 
 				
-					<img class = 'javascript' src = 'assets/images/javascript.png'>
-					<img class = 'jQuery' src = 'assets/images/jquery.png'>
+					<img class = 'wow animated rotateInDownLeft javascript' src = 'assets/images/javascript.png'>
+					<img class = 'wow animated rotateInDownRight jQuery' src = 'assets/images/jquery.png'>
 				
 
 					
 				
 					
-					<img class = 'php' src = 'assets/images/php.png'>
-					<img class = 'bootstrap_logo' src = 'assets/images/bootstrap logo.png'>	
+					<img class = 'wow animated rotateInDownLeft php' src = 'assets/images/php.png'>
+					<img class = 'wow animated rotateInDownRight bootstrap_logo' src = 'assets/images/bootstrap logo.png'>	
 					
 					
 	
-					<img class = 'ajax' src='assets/images/ajax_logo.png'> 
+					<img class = 'wow animated rollIn ajax' src='assets/images/ajax_logo.png'> 
 			
 
 
 				</div> <!-- this closes knowledge -->
 
-	</div>
+	</div> <!-- This closes the resume -->
 </section>
 
 
