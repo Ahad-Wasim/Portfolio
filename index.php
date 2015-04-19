@@ -1,12 +1,60 @@
+<!DOCTYPE html>
+<html>
+<!--
+		Author: Ahad Wasim,
+
+		Date Published: April 18th 2015,
+
+		Interested in Hiring Me  [phone-number: (415)-238-7333, email: ahadwasim@gmail.com ]
+
+-->
+
+
+
+
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> <!-- Bootstrap JavasScript -->
 	<link rel='stylesheet' href = "assets/css/main.css">
 	<link rel='stylesheet' href = 'assets/css/animate.css'>
 	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> <!-- For the cat image -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>   <!--Everything else -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>  <!--  Everything else -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+
+<style>
+#section2{
+	background-image:url(assets/images/moon_wallpaper.jpg);
+	background-size:cover;
+	height:100vh;
+	background-attachment: fixed;
+}
+#section4{
+	background-image:url(assets/images/cheetah.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	width:100vw;
+	height:100vh;
+	min-height: 95vh;
+}
+#section5{
+	background-image:url(assets/images/black_wallpaper.jpg);
+	background-attachment: fixed;
+}
+#section6{
+	background-image:url(assets/images/planet_earth.jpg);
+	background-attachment: fixed;
+	background:cover;
+}
+#section7{
+	background-image:url(assets/images/sanfrancisco.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	width:100%;
+	height:100vh;
+}
+</style>
+
 </head>
 
 
@@ -15,7 +63,7 @@
 
 
 <header>
-	<nav class="navbar navbar-inverse"> 
+	<nav class="navbar navbar-inverse navbar-static-top"> 
 		<div class = 'container'>
 			<div class = 'navbar-header'>
 				<button type='button' class = 'navbar-toggle' data-toggle='collapse' data-target='#example'>
@@ -43,16 +91,16 @@
 
 <div class = 'main_page'>
 
-<section class = 'main_picture'>
+<section class = 'main_picture' id="section1">
 	<img class = 'cool_cat' src = 'http://www.highreshdwallpapers.com/wp-content/uploads/2013/12/Cool-Cat.jpg'/> 
-	<h3 class = 'firstname'>Ahad</h3>
-	<h3 class = 'lastname'>Wasim</h3>
+	<h3 class = 'firstname animated zoomIn'>Ahad</h3>
+	<h3 class = 'lastname animated zoomIn'>Wasim</h3>
 	<div class = 'cat_hire'><h3>Hire Me</h3></div>
 </section>
 
 
-<section>
-	<img class = 'moon_picture' src = 'assets/images/moon_wallpaper.jpg'>
+<section data-stellar-background-ratio=".5" id="section2" >
+	<!--<img class = 'moon_picture' src = 'assets/images/moon_wallpaper.jpg'>-->
 	
 		<div class = 'container'>
 			<div class = 'row'>
@@ -76,10 +124,9 @@
 
 
 
-
-<section>
+<section data-stellar-background-ratio=".5" style="background-image:url('assets/images/black_wallpaper.jpg')" id='section3'>
 	<div class = 'resume'>
-		<img class = 'gray' src ='assets/images/black_wallpaper.jpg'>
+		<!--<img class = 'gray' src ='assets/images/black_wallpaper.jpg'>-->
 
 				<div class = 'text'>
 				<div class = 'headers'>
@@ -157,6 +204,7 @@
 
 				
 			</div>
+
 				<div class = 'knowledge'>
 
 				
@@ -188,9 +236,9 @@
 
 
 
-<section>
+<section data-stellar-background-ratio=".5" id="section4">
 	<div class = 'quote'>
-		<img class = 'cheetah' src = 'assets/images/cheetah.jpg'/>
+
 		<div class = 'quote_text wow animated bounceInRight'>
 		   <div class = 'container'>
 		   	<div class = 'row'>
@@ -206,9 +254,8 @@
 </section>
 
 
-<section>
+<section id="section5">
 	<div class='more_info'>
-		<img  class = 'text2' src ='assets/images/black_wallpaper.jpg'>	
 		<div class='more_info_text'>
 				
 					<h2>Things I do in my free time: </h2>
@@ -260,10 +307,8 @@
 </section>
 
 
-<section>
-	<div class = 'final'>
-		<img class = 'last_quote' src = 'assets/images/planet_earth.jpg'>
-		
+<section data-stellar-background-ratio=".5" id="section6">
+	<div class = 'final'>	
 		<div class = 'markTwain'>
 			<div class = 'mkquote'>
 				<div class = 'work'>
@@ -278,30 +323,21 @@
 
 
 
-
-<footer>
-			<img class = 'footer-img' src = 'assets/images/sanfrancisco.jpg'>
+<section data-stellar-background-ratio=".5" id="section7" >
+			
 				<div class = 'container'>	
 					<div class ='row'>	
 						<div class = 'square-box_holder'>
 							<a href = 'https://github.com/Ahad-Wasim' target="_blank"><div class = 'github'><i class="fa fa-github-square fa-5x"></i></div></a>
 							<a href = 'https://www.linkedin.com/in/ahadwasim' target="_blank"><div class = 'linkedIn'><i class="fa fa-linkedin-square fa-5x"></i></div></a>	
-							<a href = '#'><div class = 'envelope'><i class="fa fa-envelope fa-5x"></i></div></a>
+							<a href = 'mailto:ahadwasim@gmail.com?cc=ahadwasim@yahoo.com'><div class = 'envelope'><i class="fa fa-envelope fa-5x"></i></div></a>
 							<a href = 'https://plus.google.com/110021155131302152760/posts' target="_blank"><div class = 'google'><i class="fa fa-google-plus-square fa-5x"></i></div></a>
-							<button class = 'hire wow animated rubberBand'>Hire me</button>   <!-- When clicked opens up a modal -->
+							<a class ='top'><button class = 'hire wow animated rubberBand'>Hire me</button></a>   <!-- When clicked opens up a modal -->
 						</div>
 					</div>	
 				</div>
 		
-</footer>
-
-
-		
-
-
-
-
-
+</section>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -311,7 +347,12 @@
 	<script src="assets/js/wow_js/wow.js"></script>
 	
 	<script>
-		$(window).stellar();
+		//$(window).stellar();
+		$.stellar({
+			horizontalScrolling: false,
+			responsive: true
+		});
+
  		new WOW().init();
 	</script> 
 
@@ -319,4 +360,6 @@
 </div>
 
 </body>
+
+</html>
 
