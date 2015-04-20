@@ -26,9 +26,18 @@
 #section2{
 	background-image:url(assets/images/moon_wallpaper.jpg);
 	background-size:cover;
+	width:100%;
 	height:100vh;
 	background-attachment: fixed;
 }
+
+#section3{
+	background-image: url(assets/images/black_wallpaper.jpg);
+	background-size: cover;
+	width:100%;
+	height:100vh;
+}
+
 #section4{
 	background-image:url(assets/images/cheetah.jpg);
 	background-size:cover;
@@ -40,6 +49,7 @@
 #section5{
 	background-image:url(assets/images/black_wallpaper.jpg);
 	background-attachment: fixed;
+	width:100%;
 }
 #section6{
 	background-image:url(assets/images/planet_earth.jpg);
@@ -86,8 +96,7 @@
 	
 </header>
 
-<div class = 'contact_form'>
-</div>
+<div class = 'contact_form'></div>
 
 <div class = 'main_page'>
 
@@ -124,7 +133,7 @@
 
 
 
-<section data-stellar-background-ratio=".5" style="background-image:url('assets/images/black_wallpaper.jpg')" id='section3'>
+<section data-stellar-background-ratio=".5" id='section3'>
 	<div class = 'resume'>
 		<!--<img class = 'gray' src ='assets/images/black_wallpaper.jpg'>-->
 
@@ -256,52 +265,35 @@
 
 <section id="section5">
 	<div class='more_info'>
-		<div class='more_info_text'>
-				
-					<h2>Things I do in my free time: </h2>
-					<p>
-						Coding on my computer
-						Playing Video Games
-						Toying around with my car.
-						Eating all sorts of food
-						Spending time with family and Freinds.
-					</p>
+			<div class='more_info_text'>
+								
+					<div class = 'resume_contents'>	
+						<h2>Project Highlights</h2>
 
-					<h2>Project Highlights</h2>
+						<h3>Tipify</h3>
+						<p>
+							An application for tipping restaurant employees and writing reviews about them. Tipify also features a 
+							tipping Calculator which helps the consumer identify the appropriate number each employee should be tipped.
+							Note: The app is still a work in process.
 
-					<h3>Tipify</h3>
-					<p>
-						An application for tipping restaurant employees and writing reviews about them. Tipify also features a 
-						tipping Calculator which helps the consumer identify the appropriate number each employee should be tipped.
-					</p>
-					
-					<h3>Blog</h3>
-
-					<p> 
-						A platform in which many users can document their exciting,sad, or even fun experiences online availabe for the
-						public to view. 
-					</p>
-
-					<h4>More Projects can be found on Github</h4>
-						<h5>Click the github icon to visit the page</h5> 
-						   
-						 <a href = 'https://github.com/Ahad-Wasim' target="_blank"><div class = 'github'><i class="fa fa-github-square fa-5x"></i></div></a>
-
-
-
-					<div class = 'resume_contents'>					
-						<h1> Project Highlights </h1>
-						<h3>Tipify App</h3>
-						<p> An application for tipping restuarnat employees through this platform</p>
+							URL: <a href = 'http://tipify.ahadwasim.com'>Tipify</a>
+						</p>
 						
 						<h3>Blog</h3>
-						<p> A personal blog where a user can enter their information about themselves.
-						<h4> More projects on my github</h4>
+
+						<p> 
+							A platform in which many users can document their exciting,sad, or even fun experiences online availabe for the
+							public to view. 
+						</p>
+
+						<h4>More Projects can be found on Github</h4>
+							<h5>Click the github icon to visit the page</h5> 
+							   
+							 <a href = 'https://github.com/Ahad-Wasim' target="_blank"><div class = 'info_github'><i class="fa fa-github-square fa-5x"></i></div></a>
 					</div>
 
-		</div>
 
-		<img class = 'xbox' src = 'assets/images/xbox_transparent.png'>
+		</div>
 
 	</div>
 </section>
@@ -357,7 +349,7 @@
 	</script> 
 
 
-</div>
+</div> <!-- this closes main page -->
 
 </body>
 

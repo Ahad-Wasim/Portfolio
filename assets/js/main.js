@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	
 	$('.firstname,.lastname').mouseenter(function(){
 		$('.cat_hire').css({'display': 'inline-block'}).addClass('animated bounceInLeft');
 	});
@@ -25,7 +26,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.contact,.cat_hire').click(function(){
+	$('.contact,.cat_hire').on('click', function(){
 		addingForm();
 	});
 		function addingForm(){
@@ -51,15 +52,15 @@ $(document).ready(function(){
 			}
 
 			
-			var form = $('<form>').attr({role:'form'});
+			var form = $('<form>').attr({role:'form', action: 'contact_form.php', method:'post'});
 			
 			var div1 = $('<div>').addClass('form-group');
 			var labelName = $('<label>').attr({for: 'Fullname'}).html('Full Name:');
-			var fullName = $('<input>').attr({type:'text', name:'Fullname', class:'form-control', placeholder: 'You Full Name'});
+			var fullName = $('<input>').attr({type:'text', name:'Fullname', class:'form-control', placeholder: 'Your Full Name'});
 			div1.append(labelName,fullName);
 
 			var div2 = $('<div>').addClass('form-group');
-			var labelEmail = $('<label>').attr({for: 'email'}).html('Email:');
+			var labelEmail = $('<label>').attr({for: 'email'}).html('Your Email:');
 			var email = $('<input>').attr({type: 'email', name: 'email',class: 'form-control',placeholder: 'abcd@yahoo.com'});
 			div2.append(labelEmail,email);
 
@@ -75,12 +76,28 @@ $(document).ready(function(){
 			writingFormContainer.append(form);
 			contact_form.append(writingFormContainer);
 
-
-
+			
+			
+			
+			if( contact_form.innerHTML !== ''){
+				alert("you cant click now");
+				$('.contact').off('click');			 
+			 } 
+			
 			$(go_back).on('click',function(){	
 				contact_form.removeClass('bounceInRight').addClass('bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){	
 					contact_form.html('');
 				 	$('.main_page').removeClass('bounceOutLeft').addClass('bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ 		
+				 	
+				 		if ( ($.trim($(contact_form).html())=== '')){
+							alert('im here');
+							$('.contact').click(function(){
+								$('.contact').on('click');
+							});
+						}
+							
+								
+						
 				 	return;
 				 	});//closes LAST animation
 				 }); // closes next animation
@@ -120,7 +137,7 @@ $(document).ready(function(){
 			function topScroll(){
 					$('html,body').animate({ scrollTop: 0 }, 2000);
 
-					setTimeout(function(){ addingForm() } ,2300);
+					setTimeout(function(){ addingForm(); } ,2300);
 
 					setTimeout(function(){
 						$('.square-box_holder').removeClass('bounceOutRight');
@@ -128,5 +145,10 @@ $(document).ready(function(){
 					},4000);
 			} // topScroll
 		}); // this closes the click
+
+
+
+
+	
 	
 	}); // CLOSES THE MAIN DOCUMENT
