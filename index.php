@@ -13,69 +13,12 @@
 	<link rel ='stylesheet' href = 'assets/css/Bootstrap/css/bootstrap.min.css'>
 	<link rel ='sylesheet' href = 'assets/css/Bootstrap/css/bootstrap-theme.min.css'>
 	<link rel='stylesheet' href = "assets/css/main.css">
-	<link rel='stylesheet' href = 'assets/css/responsive.css'>
+	<link rel='stylesheet' href = 'assets/css/responsive.css'> 
 	<link rel='stylesheet' href = 'assets/css/animate.css'> 
 	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> <!-- Font for  the cat image -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>   <!--Everything else -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>   <!--  Everything else -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">   <!-- For external links -->
-
-<style>
-
-
-#section2{
-	background-image:url(assets/images/moon_wallpaper.jpg);
-	background-size:cover;
-	width:100%;
-	height:100vh;
-	background-attachment: fixed;
-}
-
-#section3{
-	background-image: url(assets/images/black_wallpaper.jpg);
-	background-size: cover;
-	width:100vw;
-	height:100vh;
-	background-attachment: fixed;
-}
-
-#section4{
-	background-image:url(assets/images/cheetah.jpg);
-	background-size:cover;
-	background-attachment: fixed;
-	width:100%;
-	height:100%;
-}
-
-
-#section5{
-	background-image:url(assets/images/black_wallpaper.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	width:100%;
-}
-#section6{
-	background-image:url(assets/images/planet_earth.jpg);
-	background-attachment: fixed;
-	background:cover;
-	width:100vw;
-	height:100vh;
-}
-
-
-#section7{
-	background-image:url(assets/images/sanfrancisco.jpg);
-	background-size:cover;
-	background-attachment: fixed;
-	width:100%;
-	height:100vh;
-	min-height: 50vh;
-}
-/* copy and paste this css onto main.css foler */
-/* Also add a resposive.css foler */
-/* Make sure everything is linked properly and avoid cdns */
-
-</style>
 
 </head>
 
