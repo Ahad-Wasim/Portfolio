@@ -1,0 +1,293 @@
+@media screen and (max-width: 1550px) {
+    .resume_text{
+		font-size: 20px;
+		margin-top: 6%;
+		margin-left: 5%;
+	}
+}
+
+
+@media screen and (max-width: 1330px) {
+	.list ul{
+		display:inline-block;
+		font-size: 20px;
+	}
+
+	.php{
+		height:160px;
+		width:220px;
+		margin-left: 11%;
+	}
+
+	.bootstrap_logo{
+		height:165px;
+		width:180px;
+	}
+
+
+	.javascript{
+		height:175px;
+		margin-left: 15%;
+	}
+
+	.jQuery{
+		height:175px;
+		width:150px;
+		margin-left:3% 
+	}
+
+	.css{
+		height:175px;
+		width:150px;
+	}
+	.html{
+		height: 175px;
+		width:200px;
+		margin-left:17%;
+	}
+
+
+    
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.php{
+		height:160px;
+		width:200px;
+		margin-left: 11%;
+		margin-top: 7%;
+	}
+
+	.bootstrap_logo{
+		height:150px;
+		width:160px;
+		margin-top: 7%;
+	}
+
+
+	.javascript{
+		height:170px;
+		margin-left: 15%;
+		margin-top: 7%;
+	}
+
+	.jQuery{
+		height:160px;
+		width:130px;
+		margin-left:3%; 
+		margin-top: 7%;
+	}
+
+	.css{
+		height:155px;
+		width:130px;
+	}
+	.html{
+		height: 155px;
+		width:190px;
+		margin-left:17%;
+	}
+    
+}
+
+
+
+
+@media screen and (max-width: 1170px) {
+    .firstname{
+		top:35%;
+		left:33%;
+	}
+	
+	.lastname{
+		
+		top:35%;
+		left:65%;
+	
+	}
+}
+
+
+@media screen and (max-width: 1170px) {
+    .bootstrap_logo{
+		height:130px;
+		width:140px;
+		margin-top: 7%;
+	}
+
+	.php{
+		height:140px;
+		width:180px;
+		margin-left: 11%;
+		margin-top: 7%;
+	}
+
+	.javascript{
+		height:155px;
+		margin-left: 15%;
+		margin-top: 7%;
+	}
+
+	.jQuery{
+		height:140px;
+		width:120px;
+		margin-left:3%; 
+		margin-top: 7%;
+	}
+
+	.css{
+		height:145px;
+		width:120px;
+	}
+	.html{
+		height: 145px;
+		width:170px;
+		margin-left:17%;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .hire {
+        display:none;
+
+    }
+
+    .footer2{
+    	display:block;
+    	height:100px;
+    	width:100%;
+    	background:red;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    .firstname{
+		top:35%;
+		left:31%;
+	}
+	
+	.lastname{
+		
+		top:35%;
+		left:63%;
+	}
+
+
+	.bootstrap_logo{
+		height:120px;
+		width:130px;
+		margin-top: 7%;
+	}
+
+	.php{
+		height:120px;
+		width:150px;
+		margin-left: 11%;
+		margin-top: 7%;
+	}
+
+	.javascript{
+		height:135px;
+		margin-left: 15%;
+		margin-top: 7%;
+	}
+
+	.jQuery{
+		height:130px;
+		width:110px;
+		margin-left:3%; 
+		margin-top: 7%;
+	}
+
+	.css{
+		height:125px;
+		width:110px;
+	}
+	.html{
+		height: 135px;
+		width:150px;
+		margin-left:17%;
+	}
+
+	.ajax{
+		height:125px;
+		width:200px;
+	}
+
+
+	.list ul{
+		display:inline-block;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+    .firstname{
+		font-size: 33px;
+
+	}
+	
+	.lastname{
+		font-size:33px;
+	}
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .firstname{
+    	left:31%;
+		font-size: 26px;
+
+	}
+	
+	.lastname{
+		left:64%;
+		font-size:26px;
+	}
+}
+
+
+@media screen and (max-width: 530px) {
+    .firstname{
+    	left:31%;
+		font-size: 26px;
+
+	}
+	
+	.lastname{
+		left:62%;
+		font-size:26px;
+	}
+
+	.quote_text h3 {
+ 		 font-size: 28px;
+	}	
+}
+
+
+@media screen and (max-width: 450px) {
+    .firstname{
+    	left:29%;
+		font-size: 26px;
+
+	}
+	
+	.lastname{
+		left:61%;
+		font-size:23px;
+	}
+}

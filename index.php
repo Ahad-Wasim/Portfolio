@@ -9,20 +9,20 @@
 
 -->
 
-
-
-
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> <!-- Bootstrap JavasScript -->
+	<link rel ='stylesheet' href = 'assets/css/Bootstrap/css/bootstrap.min.css'>
+	<link rel ='sylesheet' href = 'assets/css/Bootstrap/css/bootstrap-theme.min.css'>
 	<link rel='stylesheet' href = "assets/css/main.css">
-	<link rel='stylesheet' href = 'assets/css/animate.css'>
-	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> <!-- For the cat image -->
+	<link rel='stylesheet' href = 'assets/css/responsive.css'>
+	<link rel='stylesheet' href = 'assets/css/animate.css'> 
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'> <!-- Font for  the cat image -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>   <!--Everything else -->
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>  <!--  Everything else -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>   <!--  Everything else -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">   <!-- For external links -->
 
 <style>
+
+
 #section2{
 	background-image:url(assets/images/moon_wallpaper.jpg);
 	background-size:cover;
@@ -34,35 +34,47 @@
 #section3{
 	background-image: url(assets/images/black_wallpaper.jpg);
 	background-size: cover;
-	width:100%;
+	width:100vw;
 	height:100vh;
+	background-attachment: fixed;
 }
 
 #section4{
 	background-image:url(assets/images/cheetah.jpg);
 	background-size:cover;
 	background-attachment: fixed;
-	width:100vw;
-	height:100vh;
-	min-height: 95vh;
+	width:100%;
+	height:100%;
 }
+
+
 #section5{
 	background-image:url(assets/images/black_wallpaper.jpg);
 	background-attachment: fixed;
+	background-size: cover;
 	width:100%;
 }
 #section6{
 	background-image:url(assets/images/planet_earth.jpg);
 	background-attachment: fixed;
 	background:cover;
+	width:100vw;
+	height:100vh;
 }
+
+
 #section7{
 	background-image:url(assets/images/sanfrancisco.jpg);
 	background-size:cover;
 	background-attachment: fixed;
 	width:100%;
 	height:100vh;
+	min-height: 50vh;
 }
+/* copy and paste this css onto main.css foler */
+/* Also add a resposive.css foler */
+/* Make sure everything is linked properly and avoid cdns */
+
 </style>
 
 </head>
@@ -101,7 +113,8 @@
 <div class = 'main_page'>
 
 <section class = 'main_picture' id="section1">
-	<img class = 'cool_cat' src = 'http://www.highreshdwallpapers.com/wp-content/uploads/2013/12/Cool-Cat.jpg'/> 
+	<!-- Need CDN Gets unusual results if actual file -->
+    <img class = 'cool_cat' src = 'http://www.highreshdwallpapers.com/wp-content/uploads/2013/12/Cool-Cat.jpg'/>  
 	<h3 class = 'firstname animated zoomIn'>Ahad</h3>
 	<h3 class = 'lastname animated zoomIn'>Wasim</h3>
 	<div class = 'cat_hire'><h3>Hire Me</h3></div>
@@ -109,8 +122,6 @@
 
 
 <section data-stellar-background-ratio=".5" id="section2" >
-	<!--<img class = 'moon_picture' src = 'assets/images/moon_wallpaper.jpg'>-->
-	
 		<div class = 'container'>
 			<div class = 'row'>
 				<div class =  'col-sm-6 description'>
@@ -138,46 +149,40 @@
 		<!--<img class = 'gray' src ='assets/images/black_wallpaper.jpg'>-->
 
 				<div class = 'text'>
-				<div class = 'headers'>
-					<h2>Ahad Wasim</h2>
-					<h2> Full-Stack Developer</h2>
-					<h2><u>Resume</u><h2>
-				</div>
+					<div class = 'headers'>
+						<h2>Ahad Wasim</h2>
+						<h2> Full-Stack Developer</h2>
+						<h2><u>Resume</u><h2>
+					</div> <!-- headers -->
 
-				<div class = 'list'>
-					<h3>Technical ToolBox</h3>
-					<ul>
-						<li>JavaScript</li>
-						<li>jQuery</li>
-						<li>PHP</li>
-						<li>HTML5</li>
-						<li>Apache</li>
-					</ul>
-					<ul>
-						<li>CSS3</li>
-						<li>OOP/Javascript</li>
-						<li>Bootstrap</li>
-						<li>Git</li>
-						<li>MySQL</li>
-					</ul>
-					<ul>
-						<li>REST APIs</li>
-						<li>SQL</li>
-						<li>Agile/Waterfall</li>
-						<li>Gimp</li>
-						<li>JSON</li>
-					</ul>
-				</div>
+					<div class = 'list'>
+						<h3>Technical ToolBox</h3>
+						<ul>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+							<li>PHP</li>
+							<li>HTML5</li>
+							<li>Apache</li>
+						</ul>
+						<ul>
+							<li>CSS3</li>
+							<li>OOP/Javascript</li>
+							<li>Bootstrap</li>
+							<li>Git</li>
+							<li>MySQL</li>
+						</ul>
+						<ul>
+							<li>REST APIs</li>
+							<li>SQL</li>
+							<li>Agile/Waterfall</li>
+							<li>Gimp</li>
+							<li>JSON</li>
+						</ul>
+					</div> <!-- list -->
 
 				
 						
 						<div class = 'resume_text'>
-
-						<!--
-						<div class = 'lz_background'>			
-							<img class = 'learningfuze' src = 'assets/images/learningfuze.png'>
-					 	</div>
-					 	-->
 
 							<p>
 								Successfully completed an intense 12 week Full-Immersion Bootcamp which represented greater than 660 hours of
@@ -207,37 +212,27 @@
 								Experience in identifying and quickly resolving problems during the initial stages of development
 							</p>
 						</div> <!-- This closes resume contents -->
+				
+				</div> <!-- This closes text -->
 
-					
 
+				<!--								THESE ARE SEPARATED AS TABLES                                   -->
 
 				
-			</div>
-
 				<div class = 'knowledge'>
 
 				
 					<img class = 'wow animated rotateInDownLeft html' src = 'assets/images/html.png'>
 					<img class = 'wow animated rotateInDownRight css' src = 'assets/images/css.png'>
-				
-
-				
+							
 					<img class = 'wow animated rotateInDownLeft javascript' src = 'assets/images/javascript.png'>
 					<img class = 'wow animated rotateInDownRight jQuery' src = 'assets/images/jquery.png'>
-				
-
-					
-				
-					
+									
 					<img class = 'wow animated rotateInDownLeft php' src = 'assets/images/php.png'>
 					<img class = 'wow animated rotateInDownRight bootstrap_logo' src = 'assets/images/bootstrap logo.png'>	
-					
-					
-	
+						
 					<img class = 'wow animated rollIn ajax' src='assets/images/ajax_logo.png'> 
 			
-
-
 				</div> <!-- this closes knowledge -->
 
 	</div> <!-- This closes the resume -->
@@ -250,22 +245,22 @@
 
 		<div class = 'quote_text wow animated bounceInRight'>
 		   <div class = 'container'>
-		   	<div class = 'row'>
-			<h3>
-					Start by doing what's necessary.<br> Then do what's possible,<br> and suddenly you are doing the impossible.<br>
-				        <h3><strong>-Francis of Assisi</strong></h3>
-			</h3>
-			</div>
-			</div>
-		</div>
-	</div>
+		   		<div class = 'row'>
+					<h3>
+						Start by doing what's necessary.<br> Then do what's possible,<br> and suddenly you are doing the impossible.<br>
+				     	<h3><strong>-Francis of Assisi</strong></h3>
+					</h3>
+				</div>  <!-- Row -->
+			</div> <!-- Container -->
+		</div> <!-- quote text -->
+	</div> <!-- quote -->
 
 </section>
 
 
 <section id="section5">
 	<div class='more_info'>
-			<div class='more_info_text'>
+		<div class='more_info_text'>
 								
 					<div class = 'resume_contents'>	
 						<h2>Project Highlights</h2>
@@ -287,16 +282,17 @@
 						</p>
 
 						<h4>More Projects can be found on Github</h4>
-							<h5>Click the github icon to visit the page</h5> 
-							   
-							 <a href = 'https://github.com/Ahad-Wasim' target="_blank"><div class = 'info_github'><i class="fa fa-github-square fa-5x"></i></div></a>
-					</div>
-
-
-		</div>
-
-	</div>
+						<h5>Click the github icon to visit the page</h5>   
+						<a href = 'https://github.com/Ahad-Wasim' target="_blank"><div class = 'info_github'><i class="fa fa-github-square fa-5x"></i></div></a>
+					
+					</div> <!-- resume contents -->
+		
+		</div> <!-- more_info text -->
+	</div><!-- more_info -->
 </section>
+
+
+
 
 
 <section data-stellar-background-ratio=".5" id="section6">
@@ -304,13 +300,15 @@
 		<div class = 'markTwain'>
 			<div class = 'mkquote'>
 				<div class = 'work'>
+					
 					<h3>The secret of getting ahead is getting started.</h3>
 					<h4> - Mark Twain</h4>
-				</div>
-			</div>
-		</div>
+				
+				</div> <!-- Work -->
+			</div> <!-- mk quote -->
+		</div> <!-- MarkTwain -->
 		
-	</div>
+	</div><!-- final -->
 </section>
 
 
@@ -325,21 +323,19 @@
 							<a href = 'mailto:ahadwasim@gmail.com?cc=ahadwasim@yahoo.com'><div class = 'envelope'><i class="fa fa-envelope fa-5x"></i></div></a>
 							<a href = 'https://plus.google.com/110021155131302152760/posts' target="_blank"><div class = 'google'><i class="fa fa-google-plus-square fa-5x"></i></div></a>
 							<a class ='top'><button class = 'hire wow animated rubberBand'>Hire me</button></a>   <!-- When clicked opens up a modal -->
-						</div>
+						</div> 
 					</div>	
 				</div>
 		
 </section>
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src = 'assets/js/jquery-1.11.2.min.js'></script>
 	<script src = "assets/js/main.js"></script>
-	<script src = 'assets/js/stellar.js/jquery.stellar.min.js'></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src = 'assets/js/stellar.js/jquery.stellar.min.js'></script> 
+	<script src = 'assets/css/Bootstrap/js/bootstrap.min.js'></script>
 	<script src="assets/js/wow_js/wow.js"></script>
 	
 	<script>
-		//$(window).stellar();
 		$.stellar({
 			horizontalScrolling: false,
 			responsive: true
@@ -352,6 +348,5 @@
 </div> <!-- this closes main page -->
 
 </body>
-
 </html>
 
