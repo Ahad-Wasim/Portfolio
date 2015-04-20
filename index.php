@@ -35,7 +35,9 @@
 					<span class = 'icon-bar'></span>
 					<span class = 'icon-bar'></span>
 					<span class = 'icon-bar'></span> 
-				</button>	
+				</button>
+
+				 <a class="navbar-brand" href="www.http://ahadwasim.com/">Ahad Wasim</a>	
 			</div>
 
 			<div class = 'collapse navbar-collapse' id='example'>
@@ -53,45 +55,47 @@
 
 <div class = 'contact_form'></div>
 
+
+<!-- STARTS HERE -->
+
 <div class = 'main_page'>
 
-<section class = 'main_picture' id="section1">
+<section id="section1">
 	<!-- Need CDN Gets unusual results if actual file -->
     <img class = 'cool_cat' src = 'http://www.highreshdwallpapers.com/wp-content/uploads/2013/12/Cool-Cat.jpg'/>  
 	<h3 class = 'firstname animated zoomIn'>Ahad</h3>
 	<h3 class = 'lastname animated zoomIn'>Wasim</h3>
 	<div class = 'cat_hire'><h3>Hire Me</h3></div>
-</section>
+</section> <!-- SECTION 1 -->
 
 
 <section data-stellar-background-ratio=".5" id="section2" >
-		<div class = 'container'>
+		<div class = 'container-fluid'>
 			<div class = 'row'>
-				<div class =  'col-sm-6 description'>
+				<div class =  'col-md-7 col-sm-5  description wow anmated zoomInLeft'>
 					<h2> My personal Background</h2>
 
 					<p>
 						Web Development is one of my passions I've always had. Currently I am a Full-Stack Web Developer 
 						capable of building Web Applications from the ground up using primarily Javascript on the client side
 						as well as PHP on the server side. I have experience working in project oriented environment focused on
-						coding around specific technologies as well as frameworks/libraries including HTML, CSS, Javascript/jQuery,
-						bootstrap, PHP and MySQL.I am seek contribute all my technical skills for the betterment and enhancement of
+						coding around many specific technologoies. I am seek contribute all my technical skills for the betterment and enhancement of
 						company goals and their pursuit in delivering innovative and break through products in the market place.
 					</p>
 				</div> <!-- background -->
 		</div> <!-- row -->
 	</div> <!-- container -->
 
-</section>
+</section> <!-- SECTION 2 -->
 
 
 
 
-<section data-stellar-background-ratio=".5" id='section3'>
-	<div class = 'resume'>
-		<!--<img class = 'gray' src ='assets/images/black_wallpaper.jpg'>-->
+<section data-stellar-background-ratio="1" id='section3'>
+	<div class = 'container resume'>
+		<div class = 'row'>
 
-				<div class = 'text'>
+				<div class = 'col-md-7 col-xs-9 text'>
 					<div class = 'headers'>
 						<h2>Ahad Wasim</h2>
 						<h2> Full-Stack Developer</h2>
@@ -159,10 +163,10 @@
 				</div> <!-- This closes text -->
 
 
-				<!--								THESE ARE SEPARATED AS TABLES                                   -->
+				<!--								Image Table                                  -->
 
 				
-				<div class = 'knowledge'>
+				<div class = 'col-md-5 col-xs-3 knowledge'>
 
 				
 					<img class = 'wow animated rotateInDownLeft html' src = 'assets/images/html.png'>
@@ -178,8 +182,9 @@
 			
 				</div> <!-- this closes knowledge -->
 
+		</div> <!-- This closes row -->
 	</div> <!-- This closes the resume -->
-</section>
+</section> <!-- SECTION 3 -->
 
 
 
@@ -198,11 +203,10 @@
 		</div> <!-- quote text -->
 	</div> <!-- quote -->
 
-</section>
+</section> <!-- SECTION 4 -->
 
 
-<section id="section5">
-	<div class='more_info'>
+<section data-stellar-background-ratio="1" id="section5">
 		<div class='more_info_text'>
 								
 					<div class = 'resume_contents'>	
@@ -212,9 +216,10 @@
 						<p>
 							An application for tipping restaurant employees and writing reviews about them. Tipify also features a 
 							tipping Calculator which helps the consumer identify the appropriate number each employee should be tipped.
-							Note: The app is still a work in process.
+							
+							<h3 class = 'url'><strong>Note: The app is still a work in process.</strong>URL: <a style ='text-decoration: none' href = 'http://tipify.ahadwasim.com' target='_blank'>Tipify</a></h3>
 
-							URL: <a href = 'http://tipify.ahadwasim.com'>Tipify</a>
+							
 						</p>
 						
 						<h3>Blog</h3>
@@ -224,15 +229,16 @@
 							public to view. 
 						</p>
 
-						<h4>More Projects can be found on Github</h4>
-						<h5>Click the github icon to visit the page</h5>   
-						<a href = 'https://github.com/Ahad-Wasim' target="_blank"><div class = 'info_github'><i class="fa fa-github-square fa-5x"></i></div></a>
-					
-					</div> <!-- resume contents -->
-		
+						<div style = 'display: inline-block' class = 'more_projects'>
+							<h3>More Projects can be found on Github</h4>
+							<h4>Click the github icon to visit the page </h4>
+						</div>
+
+						<a href = 'https://github.com/Ahad-Wasim' target="_blank"><div style = 'display:inline-block'  class = 'info_github'><i class="fa fa-github-square fa-3x"></i></div></a>
+					</div> <!-- resume contents -->	
+
 		</div> <!-- more_info text -->
-	</div><!-- more_info -->
-</section>
+</section> <!-- SECTION 5  -->
 
 
 
@@ -244,7 +250,7 @@
 			<div class = 'mkquote'>
 				<div class = 'work'>
 					
-					<h3>The secret of getting ahead is getting started.</h3>
+					<h3>The secret to getting ahead is getting started.</h3>
 					<h4> - Mark Twain</h4>
 				
 				</div> <!-- Work -->
@@ -252,7 +258,7 @@
 		</div> <!-- MarkTwain -->
 		
 	</div><!-- final -->
-</section>
+</section> <!-- SECTION 6 -->
 
 
 
@@ -265,12 +271,16 @@
 							<a href = 'https://www.linkedin.com/in/ahadwasim' target="_blank"><div class = 'linkedIn'><i class="fa fa-linkedin-square fa-5x"></i></div></a>	
 							<a href = 'mailto:ahadwasim@gmail.com?cc=ahadwasim@yahoo.com'><div class = 'envelope'><i class="fa fa-envelope fa-5x"></i></div></a>
 							<a href = 'https://plus.google.com/110021155131302152760/posts' target="_blank"><div class = 'google'><i class="fa fa-google-plus-square fa-5x"></i></div></a>
-							<a class ='top'><button class = 'hire wow animated rubberBand'>Hire me</button></a>   <!-- When clicked opens up a modal -->
+							<a  style = 'text-decoration: none' class ='top'><button class = 'hire wow animated rubberBand'>Hire me</button></a>   <!-- When clicked opens up a modal -->
 						</div> 
 					</div>	
 				</div>
 		
-</section>
+</section> <!-- SECTION 7 -->
+
+
+
+
 
 	<script src = 'assets/js/jquery-1.11.2.min.js'></script>
 	<script src = "assets/js/main.js"></script>

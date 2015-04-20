@@ -48,31 +48,37 @@ $(document).ready(function(){
 			if($('.contact_form').hasClass('animated')){
 				var contact_form = $('.contact_form').removeClass('bounceOutRight').addClass('animated bounceInRight'); 
 			} else {
-				var contact_form = $('.contact_form').addClass('animated bounceInRight'); //'background-image': 'url(assets/images/curtain.jpg)'});	
+				var contact_form = $('.contact_form').addClass('animated bounceInRight'); 
 			}
 
 			
+			// add css property and then remove css property.
+			contact_form.addClass('contact_form_background');
+
+			
 			var form = $('<form>').attr({role:'form', action: 'contact_form.php', method:'post'});
+			form.addClass('form_position');
 			
 			var div1 = $('<div>').addClass('form-group');
-			var labelName = $('<label>').attr({for: 'Fullname'}).html('Full Name:');
+			var labelName = $('<label>').attr({for: 'Fullname'}).html('Full Name:').css({color:'white'});
 			var fullName = $('<input>').attr({type:'text', name:'Fullname', class:'form-control', placeholder: 'Your Full Name'});
 			div1.append(labelName,fullName);
 
 			var div2 = $('<div>').addClass('form-group');
-			var labelEmail = $('<label>').attr({for: 'email'}).html('Your Email:');
+			var labelEmail = $('<label>').attr({for: 'email'}).html('Your Email:').css({color:'white'});
 			var email = $('<input>').attr({type: 'email', name: 'email',class: 'form-control',placeholder: 'abcd@yahoo.com'});
 			div2.append(labelEmail,email);
 
 			
 			var div3 = $('<div>').addClass('form-group');
-			var labelMessage = $('<label>').attr({for:'message'}).html('Your Message:');
+			var labelMessage = $('<label>').attr({for:'message'}).html('Your Message:').css({color:'white'});
 			var textarea = $('<textarea>').attr({name:'message', class:'form-control', rows: '5', placeholder: 'Write your Message Here'});
 			div3.append(labelMessage,textarea);
 
-			var submit = $('<input>').attr({type:'submit',name: 'submit', class:'submit_button'});
-			var go_back = $('<button>').attr({type:'button', name: 'button'}).text('Main Page');
-			form.append(header,div1,div2,div3,submit,go_back);
+			var submit = $('<input>').attr({type:'submit',name: 'submit', class:'submit_button btn btn-primary', value: 'Submit'}).css({'float': 'right', 'padding': '6px 55px'});
+			var go_back = $('<button>').attr({type:'button', name: 'button', class: 'glyphicon glyphicon-arrow-left'}).css({'position':'relative', 'left': '4%', 'top':'4vh'});
+			contact_form.append(go_back)//
+			form.append(header,div1,div2,div3,submit);
 			writingFormContainer.append(form);
 			contact_form.append(writingFormContainer);
 
@@ -80,12 +86,13 @@ $(document).ready(function(){
 			
 			
 			if( contact_form.innerHTML !== ''){
-				alert("you cant click now");
+				console.log('you cant click contact now');
 				$('.contact').off('click');			 
 			 } 
 			
 			$(go_back).on('click',function(){	
 				contact_form.removeClass('bounceInRight').addClass('bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){	
+					contact_form.removeClass('contact_form_background');
 					contact_form.html('');
 				 	$('.main_page').removeClass('bounceOutLeft').addClass('bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ 		
 				 	
@@ -124,13 +131,13 @@ $(document).ready(function(){
 
 			
 			if( $('.square-box_holder').hasClass('animated') ){
-				var maybe = $('.square-box_holder').addClass('bounceOutRight');
+				var maybe = $('.square-box_holder').addClass('zoomOutUp');
 			} else {
-				var maybe = $('.square-box_holder').addClass('animated bounceOutRight');
+				var maybe = $('.square-box_holder').addClass('animated zoomOutUp');
 			}
 
 			maybe.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
-				topScroll();
+				setTimeout(function(){topScroll();}, 300);
 			 });
 			
 
@@ -140,8 +147,8 @@ $(document).ready(function(){
 					setTimeout(function(){ addingForm(); } ,2300);
 
 					setTimeout(function(){
-						$('.square-box_holder').removeClass('bounceOutRight');
-						$('.square-box_holder').addClass('bounceInRight');
+						$('.square-box_holder').removeClass('zoomOutUp');
+						$('.square-box_holder').addClass('zoomInDown');
 					},4000);
 			} // topScroll
 		}); // this closes the click

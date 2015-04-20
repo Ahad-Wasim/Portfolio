@@ -1,10 +1,28 @@
 @media screen and (max-width: 1550px) {
-    .resume_text{
-		font-size: 20px;
-		margin-top: 6%;
-		margin-left: 5%;
+   .resume_text{
+   	font-size: 21px;
+   }
+
+   .list ul{
+	display:inline-block;
+	font-size: 22px;
 	}
 }
+
+
+@media screen and (max-width: 1450px) {
+   .resume_text{
+   	font-size: 19px;
+   }
+
+   .list ul{
+	display:inline-block;
+	font-size: 20px;
+	}
+}
+
+
+
 
 
 @media screen and (max-width: 1330px) {
@@ -234,6 +252,37 @@
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.markTwain h3, .markTwain h4{
+		font-size: 2.5em;
+	}
+}
+
+
+@media screen and (max-width: 850px) {
+    .h2, h2{
+    	font-size: 25px;
+    }
+
+    .list ul{
+		font-size: 18px;
+	}
+
+	.resume_text{
+		font-size: 18px;
+	}
+
+	.resume_text p{
+		margin-top: 3%;
+	}
+
+	.more_info_text{
+		font-size: 21px;
+	}
+}
+
+
+
 @media screen and (max-width: 780px) {
     .firstname{
 		font-size: 33px;
@@ -243,6 +292,16 @@
 	.lastname{
 		font-size:33px;
 	}
+
+	.resume_contents{
+		width:92%;
+		padding:20px;
+	}
+
+	.markTwain h3, .markTwain h4{
+		font-size: 2.2em;
+	}
+}
 }
 
 
@@ -258,7 +317,24 @@
 		left:64%;
 		font-size:26px;
 	}
+
+	.more_info_text{
+		font-size: 18px;
+	}
+
+	.url{
+		font-size:18px;
+	}
+
 }
+
+@media screen and (max-width: 620px) {
+	#section5{
+			height:900px;
+		}
+}
+
+
 
 
 @media screen and (max-width: 530px) {
@@ -276,8 +352,17 @@
 	.quote_text h3 {
  		 font-size: 28px;
 	}	
-}
 
+
+	.resume_contents{
+		width:95%;
+	}
+}
+@media screen and (max-width: 500px) {
+	#section5{
+		height:950px;
+	}
+}
 
 @media screen and (max-width: 450px) {
     .firstname{
@@ -290,4 +375,9 @@
 		left:61%;
 		font-size:23px;
 	}
+
+	.resume_contents{
+		top:10vh;
+	}
+
 }
