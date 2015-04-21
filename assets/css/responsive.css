@@ -34,7 +34,6 @@
 	.php{
 		height:160px;
 		width:220px;
-		margin-left: 11%;
 	}
 
 	.bootstrap_logo{
@@ -50,8 +49,7 @@
 
 	.jQuery{
 		height:175px;
-		width:150px;
-		margin-left:3% 
+		width:150px; 
 	}
 
 	.css{
@@ -61,7 +59,6 @@
 	.html{
 		height: 175px;
 		width:200px;
-		margin-left:17%;
 	}
 
 
@@ -76,28 +73,21 @@
 	.php{
 		height:160px;
 		width:200px;
-		margin-left: 11%;
-		margin-top: 7%;
 	}
 
 	.bootstrap_logo{
 		height:150px;
 		width:160px;
-		margin-top: 7%;
 	}
 
 
 	.javascript{
 		height:170px;
-		margin-left: 15%;
-		margin-top: 7%;
 	}
 
 	.jQuery{
 		height:160px;
 		width:130px;
-		margin-left:3%; 
-		margin-top: 7%;
 	}
 
 	.css{
@@ -107,7 +97,6 @@
 	.html{
 		height: 155px;
 		width:190px;
-		margin-left:17%;
 	}
     
 }
@@ -122,10 +111,8 @@
 	}
 	
 	.lastname{
-		
 		top:35%;
 		left:65%;
-	
 	}
 }
 
@@ -134,27 +121,20 @@
     .bootstrap_logo{
 		height:130px;
 		width:140px;
-		margin-top: 7%;
 	}
 
 	.php{
 		height:140px;
 		width:180px;
-		margin-left: 11%;
-		margin-top: 7%;
 	}
 
 	.javascript{
 		height:155px;
-		margin-left: 15%;
-		margin-top: 7%;
 	}
 
 	.jQuery{
 		height:140px;
 		width:120px;
-		margin-left:3%; 
-		margin-top: 7%;
 	}
 
 	.css{
@@ -164,27 +144,11 @@
 	.html{
 		height: 145px;
 		width:170px;
-		margin-left:17%;
 	}
 }
 
 
 
-
-
-@media screen and (max-width: 1000px) {
-    .hire {
-        display:none;
-
-    }
-
-    .footer2{
-    	display:block;
-    	height:100px;
-    	width:100%;
-    	background:red;
-    }
-}
 
 
 
@@ -197,8 +161,7 @@
 		left:31%;
 	}
 	
-	.lastname{
-		
+	.lastname{	
 		top:35%;
 		left:63%;
 	}
@@ -207,27 +170,20 @@
 	.bootstrap_logo{
 		height:120px;
 		width:130px;
-		margin-top: 7%;
 	}
 
 	.php{
 		height:120px;
 		width:150px;
-		margin-left: 11%;
-		margin-top: 7%;
 	}
 
 	.javascript{
 		height:135px;
-		margin-left: 15%;
-		margin-top: 7%;
 	}
 
 	.jQuery{
 		height:130px;
 		width:110px;
-		margin-left:3%; 
-		margin-top: 7%;
 	}
 
 	.css{
@@ -237,7 +193,6 @@
 	.html{
 		height: 135px;
 		width:150px;
-		margin-left:17%;
 	}
 
 	.ajax{
@@ -283,10 +238,12 @@
 
 
 
+
+
+
 @media screen and (max-width: 780px) {
     .firstname{
 		font-size: 33px;
-
 	}
 	
 	.lastname{
@@ -301,8 +258,71 @@
 	.markTwain h3, .markTwain h4{
 		font-size: 2.2em;
 	}
+
+	#section3{
+		height:1500px;
+	}
+
+	.javascript{
+		height:150px;
+		position: static;	
+	}
+
+	.jQuery{
+		height: 150px;
+	  	position: static;
+	}
+
+	.css{
+		height:150px;
+		width:125px;
+		position: static;
+	}
+	.html{
+		height: 150px;
+		width:180px;
+		position:static;
+	}
+
+	.bootstrap_logo{
+		height: 155px;
+	  	width: 150px;
+	  	position: static;
+	}
+
+	.php{
+		height:182px;
+		width:244px;
+		position:static;
+	}
+
+	.ajax{
+		position:static;
+	}
+
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,11 +348,66 @@
 
 }
 
+
+
 @media screen and (max-width: 620px) {
 	#section5{
-			height:900px;
-		}
+		height:900px;
+	}
+
+	.github{
+		font-size: 1.0em;
+		display:inline-block;
+		margin-right: 25px;
+		color:rgb(51, 51, 51);
+		float:right;
+	}
+
+	.linkedIn{
+		font-size: 1.0em;
+		display:inline-block;
+		margin-right: 25px;
+		color:rgb(51, 51, 51);
+		float:right;
+	}
+
+
+	.envelope{
+		font-size: 1.0em;
+		display:inline-block;
+		margin-right: 25px;
+		color:rgb(51, 51, 51);
+		float:right;
+	}
+
+	.google{
+		font-size: 1.0em;
+		display:inline-block;
+		color:rgb(51, 51, 51);
+		margin-right: 18px;
+		float:right;
+	}
+
+	.square-box_holder{
+		margin-top:2%;
+		width:175px;
+		height:100px;
+		display:inline-block;
+		float:right;
+	}
+
+	.hire{
+		margin-top:5%;
+		border-radius:2px;
+		width:100px;
+		color:white;
+		border:none;
+		background:red;
+		display:block;
+		font-size: 20px;
+	}
 }
+
 
 
 
@@ -360,7 +435,7 @@
 }
 @media screen and (max-width: 500px) {
 	#section5{
-		height:950px;
+		height:875px;
 	}
 }
 

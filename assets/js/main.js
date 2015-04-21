@@ -12,18 +12,70 @@ $(document).ready(function(){
 		$(this).css({'background': 'transparent'});
 	});
 
-	
-	$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '15px 20px'});
 
 
-	$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
-		$(this).css({'background':'lavender'});
-	});
-	
-	$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseleave(function(){
-		$(this).css({'background':'none'});
 
-	});
+	// $(window).resize(function() {
+	//     width = $(this).width();
+	//     height = $(this).height();
+	// 	if(width > 620){
+	// 		// if its above 620 add this size
+	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '15px 20px'});
+
+
+	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
+	// 			$(this).css({'background':'lavender'});
+	// 		});
+			
+	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseleave(function(){
+	// 			$(this).css({'background':'none'});
+
+	// 		});
+	// 	} else {
+	// 		// if its below the certian window size remove this class 
+	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '0'});
+
+	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
+	// 			$(this).css({'background':'none'});
+	// 		});
+	// 	}
+	// }); 
+
+
+	function jqUpdateSize(){
+	    // Get the dimensions of the viewport
+	    var width = $(window).width();
+	    var height = $(window).height();
+
+	if(width > 620){
+			// if its above 620 add this size
+			$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '15px 20px'});
+
+
+			$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
+				$(this).css({'background':'lavender'});
+			});
+			
+			$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseleave(function(){
+				$(this).css({'background':'none'});
+
+			});
+		} else {
+			// if its below the certian window size remove this class 
+			$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '0'});
+
+			$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
+				$(this).css({'background':'none'});
+			});
+		}
+	}
+	$(document).ready(jqUpdateSize);    // When the page first loads
+	$(window).resize(jqUpdateSize);     // When the browser changes size
+
+
+
+
+
 
 
 	$('.contact,.cat_hire').on('click', function(){

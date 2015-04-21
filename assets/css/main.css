@@ -24,7 +24,7 @@ section{
 	background-image: url(../images/black_wallpaper.jpg);
 	background-size: cover;
 	width:100%;
-	height:1000px;
+	height:1100px;
 	background-attachment: fixed;
 }
 
@@ -136,7 +136,7 @@ section{
 .description{
 	font-size: 20px;
 	color:rgb(253, 253, 190);
-	 -webkit-animation-delay: 1s;
+	 -webkit-animation-delay: .75s;
 }
 
 /* SECTION 2 */
@@ -148,7 +148,7 @@ section{
 /* SECTION 3 */
 .resume{
 	width:100%;
-	height:100vh;
+	height:100%;
 }
 
 .headers{
@@ -166,7 +166,7 @@ section{
 
 .resume_text{
 	font-size: 25px;
-	margin-top: 6%;
+	margin-top: 3%;
 	margin-left: 5%;
 }
 
@@ -176,63 +176,78 @@ section{
 
 .knowledge{
 	border:1px solid white;
-	margin-top: 8%;
+	position:relative;
+	margin-top: 4%;
 }
 
 .text{
 	color:white;
 	border:1px solid white;
-	font-family: 'Ubuntu', sans-serif;	
+	font-family: 'Ubuntu', sans-serif;
+	margin-top: 2%;	
 }
 
-.lz_background{
+/*.lz_background{
 	background:white;
 	padding:10px 15px;
 	display:inline-block;
 }
+
 .learningfuze{
 	width:300px;
 	height:50px;
-}
+}*/
 
 .javascript{
 	height:200px;
-	margin-left: 15%;
-	margin-top: 5%;
+	position: absolute;
+	top:45vh;
+	left:13%;
+	
 }
 
 .jQuery{
-	height:175px;
-	margin-top: 5%;
-}
+	height: 175px;
+  	position: absolute;
+  	top: 95vh;
+  	left: 16%;
+	}
 
 .css{
 	height:200px;
 	width:172px;
+	position: absolute;
+	top:18vh;
+	left:50%;
 }
 .html{
 	height: 200px;
 	width:237px;
-	margin-left:17%;
+	position:absolute;
+	top:0;
+	left:14%;
 }
 
 .bootstrap_logo{
-	height:185px;
-	width:200px;
-	margin-left: 4%;
-	margin-top: 5%;
+	height: 185px;
+  	width: 200px;
+  	position: absolute;
+  	top: 60vh;
+  	left: 48%;
 }
 
 .php{
 	height:182px;
 	width:244px;
-	margin-left: 11%;
-	margin-top: 5%;
+	position:absolute;
+	top:100vh;
+	left:60%;
 }
 
 .ajax{
-	margin-left: 20%;
-	margin-top: 5%;
+	position:absolute;
+	top:115vh;
+	left:14%;
 }
 
 /* SECTION 3 */
@@ -413,6 +428,29 @@ footer{
 	display:inline-block;
 	float:right;
 }
+
+
+
+.fa-github-square:hover{
+	padding: 15px 20px;
+	background:lavender	;
+}
+.fa-linkedin-square:hover{
+	padding: 15px 20px;
+	background:lavender	;
+}
+.fa-envelope:hover{
+	padding: 15px 20px;
+	background:lavender	;
+}
+.fa-google-plus-square:hover{
+	padding: 5px 20px;
+	background:lavender	;
+}
+
+
+
+
 
 /*   Business LINKS  */
 

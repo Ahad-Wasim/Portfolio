@@ -95,93 +95,116 @@
 	<div class = 'container resume'>
 		<div class = 'row'>
 
-				<div class = 'col-md-7 col-xs-9 text'>
+				<div class = 'col-md-9 col-sm-9  text'>
 					<div class = 'headers'>
 						<h2>Ahad Wasim</h2>
 						<h2> Full-Stack Developer</h2>
 						<h2><u>Resume</u><h2>
 					</div> <!-- headers -->
 
-					<div class = 'list'>
-						<h3>Technical ToolBox</h3>
-						<ul>
-							<li>JavaScript</li>
-							<li>jQuery</li>
-							<li>PHP</li>
-							<li>HTML5</li>
-							<li>Apache</li>
-						</ul>
-						<ul>
-							<li>CSS3</li>
-							<li>OOP/Javascript</li>
-							<li>Bootstrap</li>
-							<li>Git</li>
-							<li>MySQL</li>
-						</ul>
-						<ul>
-							<li>REST APIs</li>
-							<li>SQL</li>
-							<li>Agile/Waterfall</li>
-							<li>Gimp</li>
-							<li>JSON</li>
-						</ul>
-					</div> <!-- list -->
+					<div class = 'container'>
+						<div class = 'row'>
+							<div class = 'list'>
+							<h3>Technical ToolBox</h3>
+								<div class = 'col-xs-4 col-sm-3 col-md-2'>
+									<ul>
+										<li>JavaScript</li>
+										<li>jQuery</li>
+										<li>PHP</li>
+										<li>HTML5</li>
+										<li>Apache</li>
+									</ul>
+								</div>
+								
+								<div class = 'col-xs-4 col-sm-3 col-md-2'>
+									<ul>
+										<li>CSS3</li>
+										<li>OOP/JS</li>
+										<li>Bootstrap</li>
+										<li>Git</li>
+										<li>MySQL</li>
+									</ul>
+								</div>
+
+								<div class = 'col-xs-4 col-sm-3 col-md-2'>
+									<ul>
+										<li>REST APIs</li>
+										<li>SQL</li>
+										<li>Agile/Waterfall</li>
+										<li>Gimp</li>
+										<li>JSON</li>
+									</ul>
+								</div>
+							</div> <!-- list -->
+						</div> <!-- row -->
+					</div> <!-- container -->
 
 				
 						
-						<div class = 'resume_text'>
+						
 
-							<p>
-								Successfully completed an intense 12 week Full-Immersion Bootcamp which represented greater than 660 hours of
-							 	training by coding full time from Monday - Fridays.
-							</p>
+						<div class = 'container'>
+							<div class = 'row'>
+								<div class = ' col-md-9 col-sm-9 resume_text'>
+									<p class = 'wow animated bounceInLeft'>
+										Successfully completed an intense 12 week Full-Immersion Bootcamp which represented greater than 660 hours of
+									 	training by coding full time from Monday - Fridays.
+									</p>
 
+									
+									<p class = 'wow animated bounceInLeft'>
+										Work like, project oriented environment focused on coding around specific technologies as well as frameworks/libraries
+										including HTML, CSS, Javascript/jQuery, Bootstrap, PHP and MySQL.
+									</p>
+
+									<p class = 'wow animated bounceInLeft'>
+										Extensively utilized Github for version control in an agile development environment
+									</p>
+
+									<p class = 'wow animated bounceInLeft'>
+										Built, modified and maintained numerous scalable applications/websites from inception to completion with the guidance and
+										instruction from senior developers
+									</p>
+
+									<p class = 'wow animated bounceInLeft'>
+										Created Dynamic Websites that were user-friendly, effective, and appealing for the front end as well as fluent for the back end
+									</p>
+
+									<p class = 'wow animated bounceInLeft'>
+										Experience in identifying and quickly resolving problems during the initial stages of development
+									</p>
+
+								</div> <!-- This closes resume contents -->
+
+							</div> <!-- Row -->
+
+						</div> <!-- Closes container -->
 							
-							<p>
-								Work like, project oriented environment focused on coding around specific technologies as well as frameworks/libraries
-								including HTML, CSS, Javascript/jQuery, Bootstrap, PHP and MySQL.
-							</p>
-
-							<p>
-								Extensively utilized Github for version control in an agile development environment
-							</p>
-
-							<p>
-								Built, modified and maintained numerous scalable applications/websites from inception to completion with the guidance and
-								instruction from senior developers
-							</p>
-
-							<p>
-								Created Dynamic Websites that were user-friendly, effective, and appealing for the front end as well as fluent for the back end
-							</p>
-
-							<p>
-								Experience in identifying and quickly resolving problems during the initial stages of development
-							</p>
-						</div> <!-- This closes resume contents -->
+						
 				
 				</div> <!-- This closes text -->
 
 
 				<!--								Image Table                                  -->
 
-				
-				<div class = 'col-md-5 col-xs-3 knowledge'>
+				<div class = 'container-fluid'>
+					<div class = 'row'>
+						<div class = 'col-md-3 col-sm-3 col-xs-12 knowledge'>
 
 				
-					<img class = 'wow animated rotateInDownLeft html' src = 'assets/images/html.png'>
-					<img class = 'wow animated rotateInDownRight css' src = 'assets/images/css.png'>
-							
-					<img class = 'wow animated rotateInDownLeft javascript' src = 'assets/images/javascript.png'>
-					<img class = 'wow animated rotateInDownRight jQuery' src = 'assets/images/jquery.png'>
-									
-					<img class = 'wow animated rotateInDownLeft php' src = 'assets/images/php.png'>
-					<img class = 'wow animated rotateInDownRight bootstrap_logo' src = 'assets/images/bootstrap logo.png'>	
-						
-					<img class = 'wow animated rollIn ajax' src='assets/images/ajax_logo.png'> 
+							<img class = 'wow animated rotateInDownLeft html' src = 'assets/images/html.png'>
+							<img class = 'wow animated rotateInDownRight css' src = 'assets/images/css.png'>								
+							<img class = 'wow animated rotateInDownLeft javascript' src = 'assets/images/javascript.png'>
+							<img class = 'wow animated rotateInDownRight bootstrap_logo' src = 'assets/images/bootstrap logo.png'>
+							<img class = 'wow animated rotateInDownRight jQuery' src = 'assets/images/jquery.png'>										
+							<img class = 'wow animated rotateInDownLeft php' src = 'assets/images/php.png'>
+							<img class = 'wow animated rollIn ajax' src='assets/images/ajax_logo.png'> 
 			
-				</div> <!-- this closes knowledge -->
+						</div> <!-- this closes knowledge -->
+					</div> <!-- row -->
+				</div> <!-- container-fluid -->
 
+		
 		</div> <!-- This closes row -->
 	</div> <!-- This closes the resume -->
 </section> <!-- SECTION 3 -->
