@@ -220,8 +220,8 @@
 	<div class = 'quote'>
 
 		<div class = 'quote_text wow animated bounceInRight'>
-		   <div class = 'container'>
-		   		<div class = 'row'>
+		   <div>
+		   		<div>
 					<h3>
 						Start by doing what's necessary.<br> Then do what's possible,<br> and suddenly you are doing the impossible.<br>
 				     	<h3><strong>-Francis of Assisi</strong></h3>
