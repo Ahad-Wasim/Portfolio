@@ -67,7 +67,7 @@ section{
 
 .contact_form_background{
 	background-image:url(../images/contact_form_background.png);
-	height:100vh;
+	height:1000px;
 }
 
 .form_position{
@@ -113,7 +113,7 @@ section{
 
 .cat_hire{
 	display:none;
-	border:2px solid black; /* whats this */
+	border:2px solid black; 
 	padding:5px 15px;
 	padding-bottom: 10px;
 	position:absolute;
@@ -175,14 +175,12 @@ section{
 }
 
 .knowledge{
-	border:1px solid white;
 	position:relative;
 	margin-top: 4%;
 }
 
 .text{
 	color:white;
-	border:1px solid white;
 	font-family: 'Ubuntu', sans-serif;
 	margin-top: 2%;	
 }
@@ -201,52 +199,53 @@ section{
 .javascript{
 	height:200px;
 	position: absolute;
-	top:45vh;
-	left:13%;
+	top:40vh;
+	left:0%;
 	
 }
 
 .jQuery{
 	height: 175px;
+	width:166px;
   	position: absolute;
-  	top: 95vh;
-  	left: 16%;
+  	top: 74vh;
+  	left: 7%;
 	}
 
 .css{
 	height:200px;
 	width:172px;
 	position: absolute;
-	top:18vh;
-	left:50%;
+	top:16vh;
+	left:54%;
 }
 .html{
 	height: 200px;
 	width:237px;
 	position:absolute;
 	top:0;
-	left:14%;
+	left:0;
 }
 
 .bootstrap_logo{
 	height: 185px;
   	width: 200px;
   	position: absolute;
-  	top: 60vh;
-  	left: 48%;
+  	top: 55vh;
+  	left: 51%;
 }
 
 .php{
 	height:182px;
-	width:244px;
+	width:225px;
 	position:absolute;
-	top:100vh;
-	left:60%;
+	top:88vh;
+	left:47%;
 }
 
 .ajax{
 	position:absolute;
-	top:115vh;
+	top:111vh;
 	left:14%;
 }
 
@@ -356,12 +355,10 @@ section{
 	position: relative;
   	top: 30%;
   	transform: translateY(-50%);
-  	border:1px solid white;
   	text-align: center;
 }
 
 .work{
-	border:1px solid red;
 	display:inline-block;
 }
 

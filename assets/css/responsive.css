@@ -29,43 +29,38 @@
 	.list ul{
 		display:inline-block;
 		font-size: 20px;
-	}
-
-	.php{
-		height:160px;
-		width:220px;
-	}
-
-	.bootstrap_logo{
-		height:165px;
-		width:180px;
-	}
-
-
-	.javascript{
-		height:175px;
-		margin-left: 15%;
-	}
-
-	.jQuery{
-		height:175px;
-		width:150px; 
-	}
-
-	.css{
-		height:175px;
-		width:150px;
-	}
-	.html{
-		height: 175px;
-		width:200px;
-	}
-
-
-    
+	}   
 }
 
 
+
+@media screen and (max-width: 1300px) {
+
+	.jQuery{
+		height: 175px;
+		width:150px;
+	  	position: absolute;
+	  	top: 70vh;
+	  	left: 7%;
+	}
+
+	.bootstrap_logo{
+		height: 185px;
+	  	width: 180px;
+	  	position: absolute;
+	  	top: 55vh;
+	  	left: 51%;
+	}
+
+	.php{
+		height:164px;
+		width:205px;
+		position:absolute;
+		top:88vh;
+		left:46%;
+	}
+
+}
 
 
 
@@ -73,30 +68,40 @@
 	.php{
 		height:160px;
 		width:200px;
+		top: 89vh;
+		left:43%;
 	}
 
 	.bootstrap_logo{
-		height:150px;
-		width:160px;
+		height:160px;
+		width:167px;
+		top:55vh;
+		left:51%;
 	}
 
 
 	.javascript{
-		height:170px;
+		height:177px;
+		top:36vh;
+		left:0;
 	}
 
 	.jQuery{
 		height:160px;
 		width:130px;
+		top:70vh;
+		left:7%;
 	}
 
 	.css{
-		height:155px;
-		width:130px;
+		height:179px;
+		width:151px;
+		top:14vh;
+		left:53%;
 	}
 	.html{
-		height: 155px;
-		width:190px;
+		height: 172px;
+		width:208px;
 	}
     
 }
@@ -145,12 +150,32 @@
 		height: 145px;
 		width:170px;
 	}
+	.ajax{
+		height:118px;
+		width:auto;
+	}
 }
 
 
 
 
-
+@media screen and (max-width: 835px) {
+	.cat_hire{
+		display:none;
+		border:2px solid black;   
+		padding:2px 8px;
+		padding-bottom: none;
+		position:absolute;
+		top:3%;
+		left:4%;
+		font-family: 'Permanent Marker', cursive;
+		cursor: pointer;
+		background:red;
+	}
+	.cat_hire h3{
+		font-size: 25px;	
+	}
+}
 
 
 
@@ -236,11 +261,6 @@
 	}
 }
 
-
-
-
-
-
 @media screen and (max-width: 780px) {
     .firstname{
 		font-size: 33px;
@@ -260,44 +280,22 @@
 	}
 
 	#section3{
-		height:1500px;
-	}
-
-	.javascript{
-		height:150px;
-		position: static;	
-	}
-
-	.jQuery{
-		height: 150px;
-	  	position: static;
-	}
-
-	.css{
-		height:150px;
-		width:125px;
-		position: static;
-	}
-	.html{
-		height: 150px;
-		width:180px;
-		position:static;
+		height:1400px;
 	}
 
 	.bootstrap_logo{
-		height: 155px;
-	  	width: 150px;
-	  	position: static;
+		left: 43%;
 	}
 
 	.php{
-		height:182px;
-		width:244px;
-		position:static;
+		left: 36%;
 	}
 
-	.ajax{
-		position:static;
+	.css{
+		height: 125px;
+		width: 98px;
+		top: 17vh;
+		left: 49%;
 	}
 
 }
@@ -306,22 +304,151 @@
 
 
 
+@media screen and (max-width: 765px) {
+	.javascript{
+		height: 161px;
+  		width: 217px;
+  		position: static;	
+	}
+
+	.jQuery{
+		height: 155px;
+  		width: 125px;
+  		position: static;
+  		margin-left: 5%;
+	}
+
+	.css{
+		height: 157px;
+  		width: 138px;
+  		position: static;
+	}
+	.html{
+		height: 162px;
+  		width: 195px;
+  		position: static;
+	}
+
+	.bootstrap_logo{
+		height: 155px;
+  		width: 150px;
+  		position: static;
+	}
+
+	.php{
+		height: 182px;
+  		width: 223px;
+  		position: static;
+  		margin-left: 8%;
+	}
+
+	.ajax{
+		position: static;
+  		height: 123px;
+  		width: 230px;
+  		margin-left: 5%;
+	}
+}
+
+
+
+@media screen and (max-width: 750px) {
+	.javascript{
+		  height: 148px;
+  width: 182px;
+  position: static;	
+	}
+
+	.jQuery{
+		  height: 146px;
+  width: 110px;
+  position: static;
+  margin-left: 5%;
+	}
+
+	.css{
+		  height: 141px;
+  width: 120px;
+  position: static;
+	}
+	.html{
+		height: 144px;
+  width: 167px;
+  position: static;
+	}
+
+	.bootstrap_logo{
+		  height: 147px;
+  width: 150px;
+  position: static;
+	}
+
+	.php{
+		  height: 150px;
+  width: 184px;
+  position: static;
+  margin-left: 8%;
+	}
+
+	.ajax{
+		  position: static;
+  height: 123px;
+  width: 203px;
+  margin-left: 5%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 664px) {
+
+	.jQuery{
+		height: 146px;
+  		width: 110px;
+  		position: static;
+  		margin-left: 8%;
+	}
+
+	.css{
+  		margin-right: 6%;
+	}
+
+	.html{
+  		margin-left: 5%;
+  		margin-right: 6%;
+	}
+
+	.bootstrap_logo{
+		  margin-left: 6%;
+		  margin-top: 4%;
+	}
+
+	.php{
+		height: 150px;
+  		width: 184px;
+  		position: static;
+  		margin-left: 8%;
+	}
+
+	.ajax{
+		margin-left: 33%;
+		margin-top: 3%;
+	}
+}
 
 
 
 
 
+@media screen and (max-width: 650px) {
 
 
-
-
-
-
-
-
-
-
-
+	.work h4{
+		margin-top: 10%;		
+		float:none;
+	}
+}
 
 
 
@@ -352,7 +479,7 @@
 
 @media screen and (max-width: 620px) {
 	#section5{
-		height:900px;
+		height:675px;
 	}
 
 	.github{
@@ -406,7 +533,122 @@
 		display:block;
 		font-size: 20px;
 	}
+
+
+	.javascript{
+		height: 132px;
+  		width: 166px;
+  		position: static;
+	}
+
+	.jQuery{
+		height: 146px;
+  		width: 110px;
+  		position: static;
+  		margin-left: 8%;
+	}
+
+	.css{
+		margin-right: 6%;
+  		height: 129px;
+  		width: 105px;
+	}
+	
+	.html{
+		margin-left: 7%;
+  		margin-right: 6%;
+  		height: 126px;
+  		width: 146px;
+	}
+
+	.bootstrap_logo{
+		margin-left: 8%;
+  		margin-top: 4%;
+  		height: 135px;
+  		width: 124px;
+	}
+
+	.php{
+		height: 140px;
+	    width: 149px;
+	    margin-top: 3%;
+	    position: static;
+	    margin-left: 8%;
+	}
+
+	.ajax{
+		margin-left: 31%;
+ 		margin-top: 1%;
+	}
+	
 }
+
+
+
+
+
+@media screen and (max-width: 560px) {
+	.hire{
+		margin-top:5%;
+		border-radius:2px;
+		width:100px;
+		color:white;
+		border:none;
+		background:red;
+		display:block;
+		font-size: 20px;
+	}
+
+
+	.javascript{
+		  height: 132px;
+  width: 166px;
+  position: static;
+	}
+
+	.jQuery{
+		  height: 126px;
+  width: 98px;
+  position: static;
+  margin-left: 5%;
+	}
+
+	.css{
+		   margin-right: -1%;
+  height: 129px;
+  width: 105px;
+	}
+	
+	.html{
+		  margin-left: 5%;
+  margin-right: 0%;
+  height: 126px;
+  width: 146px;
+	}
+
+	.bootstrap_logo{
+		  margin-left: 8%;
+  margin-top: 4%;
+  height: 121px;
+  width: 108px;
+	}
+
+	.php{
+		  height: 130px;
+  width: 143px;
+  margin-top: 3%;
+  position: static;
+  margin-left: 3%;
+	}
+
+	.ajax{
+		  margin-left: 27%;
+  margin-top: 1%;
+  height: 98px;
+  width: 203px;
+	}
+}
+
 
 
 
@@ -435,9 +677,65 @@
 }
 @media screen and (max-width: 500px) {
 	#section5{
-		height:875px;
+		height:775px;
 	}
 }
+
+
+@media screen and (max-width: 475px) {
+.javascript{
+		   height: 114px;
+  width: 147px;
+  position: static;
+  margin-top: 1vh;
+	}
+
+	.jQuery{
+		    height: 100px;
+  width: 98px;
+  position: static;
+  margin-left: 5%;
+	}
+
+	.css{
+		    margin-right: -1%;
+  height: 110px;
+  width: 90px;
+	}
+	
+	.html{
+		   margin-left: 5%;
+  margin-right: 0%;
+  height: 110px;
+  width: 127px;
+	}
+
+	.bootstrap_logo{
+		    margin-left: 6%;
+  margin-top: 4%;
+  height: 108px;
+  width: 91px;
+	}
+
+	.php{
+		   height: 102px;
+  width: 128px;
+  margin-top: 3%;
+  position: static;
+  margin-left: 3%;
+	}
+
+	.ajax{
+		  margin-left: 24%;
+  margin-top: 1%;
+  height: 98px;
+  width: 203px;
+	}
+
+}
+
+
+
 
 @media screen and (max-width: 450px) {
     .firstname{
@@ -455,4 +753,69 @@
 		top:10vh;
 	}
 
+	.work{
+		width:90%;
+	}
+
+	#section3{
+		height:1500px;
+	}
+
 }
+
+
+
+@media screen and (max-width: 420px) {
+	.javascript {
+	  height: 100px;
+	  width: 131px;
+	  position: static;
+	  margin-top: 1vh;
+	}
+
+	.jQuery {
+	  height: 95px;
+	  width: 90px;
+	  position: static;
+	  margin-left: 4%;
+	}
+
+	.css {
+	  margin-right: -2%;
+	  height: 97px;
+	  width: 83px;
+	}
+	
+	.html {
+	  margin-left: 2%;
+	  margin-right: 0%;
+	  height: 99px;
+	  width: 117px;
+	}
+
+	.bootstrap_logo {
+	  margin-left: 4%;
+	  margin-top: 4%;
+	  height: 108px;
+	  width: 91px;
+	}
+
+	.php {
+	  height: 96px;
+	  width: 112px;
+	  margin-top: 3%;
+	  position: static;
+	  margin-left: 3%;
+	}
+
+	.ajax {
+	  margin-left: 24%;
+	  margin-top: 1%;
+	  height: 89px;
+	  width: 191px;
+	}
+}
+
+
+
+

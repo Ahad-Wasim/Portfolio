@@ -11,37 +11,7 @@ $(document).ready(function(){
 	$('.cat_hire').mouseleave(function(){
 		$(this).css({'background': 'transparent'});
 	});
-
-
-
-
-	// $(window).resize(function() {
-	//     width = $(this).width();
-	//     height = $(this).height();
-	// 	if(width > 620){
-	// 		// if its above 620 add this size
-	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '15px 20px'});
-
-
-	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
-	// 			$(this).css({'background':'lavender'});
-	// 		});
-			
-	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseleave(function(){
-	// 			$(this).css({'background':'none'});
-
-	// 		});
-	// 	} else {
-	// 		// if its below the certian window size remove this class 
-	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '0'});
-
-	// 		$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').mouseenter(function(){
-	// 			$(this).css({'background':'none'});
-	// 		});
-	// 	}
-	// }); 
-
-
+  
 	function jqUpdateSize(){
 	    // Get the dimensions of the viewport
 	    var width = $(window).width();
@@ -60,6 +30,7 @@ $(document).ready(function(){
 				$(this).css({'background':'none'});
 
 			});
+	 
 		} else {
 			// if its below the certian window size remove this class 
 			$('.fa-github-square, .fa-linkedin-square, .fa-envelope, .fa-google-plus-square').css({'padding': '0'});
@@ -68,6 +39,19 @@ $(document).ready(function(){
 				$(this).css({'background':'none'});
 			});
 		}
+
+		if (width < 835) {
+			$('.cat_hire').css({'background':'red'});
+
+			$('.cat_hire').mouseleave(function(){
+				$(this).css({'background': 'red'});
+			});
+		}  
+		if (width > 835){
+			$('.cat_hire').css({'background': 'transparent'});
+		}		
+
+
 	}
 	$(document).ready(jqUpdateSize);    // When the page first loads
 	$(window).resize(jqUpdateSize);     // When the browser changes size
@@ -89,7 +73,8 @@ $(document).ready(function(){
 			} else {
 				$('.main_page').addClass('animated bounceOutLeft');	
 			}
-
+			// you could just remove the cat picture
+			
 			setTimeout(function(){ writingForm();},700);
 			
 		
@@ -108,7 +93,7 @@ $(document).ready(function(){
 			contact_form.addClass('contact_form_background');
 
 			
-			var form = $('<form>').attr({role:'form', action: 'contact_form.php', method:'post'});
+			var form = $('<form>').attr({role:'form', action: 'index.php', method:'post'});
 			form.addClass('form_position');
 			
 			var div1 = $('<div>').addClass('form-group');
@@ -128,17 +113,16 @@ $(document).ready(function(){
 			div3.append(labelMessage,textarea);
 
 			var submit = $('<input>').attr({type:'submit',name: 'submit', class:'submit_button btn btn-primary', value: 'Submit'}).css({'float': 'right', 'padding': '6px 55px'});
-			var go_back = $('<button>').attr({type:'button', name: 'button', class: 'glyphicon glyphicon-arrow-left'}).css({'position':'relative', 'left': '4%', 'top':'4vh'});
-			contact_form.append(go_back)//
+			var go_back = $('<button>').attr({type:'button', name: 'button', class: 'glyphicon glyphicon-arrow-left'}).css({'position':'relative', 'left': '4%', 'top':'4vh','margin-bottom':'4%'});
+			contact_form.append(go_back)
 			form.append(header,div1,div2,div3,submit);
 			writingFormContainer.append(form);
 			contact_form.append(writingFormContainer);
 
-			
-			
-			
+
+
+
 			if( contact_form.innerHTML !== ''){
-				console.log('you cant click contact now');
 				$('.contact').off('click');			 
 			 } 
 			
@@ -149,14 +133,10 @@ $(document).ready(function(){
 				 	$('.main_page').removeClass('bounceOutLeft').addClass('bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ 		
 				 	
 				 		if ( ($.trim($(contact_form).html())=== '')){
-							alert('im here');
 							$('.contact').click(function(){
-								$('.contact').on('click');
+								$('.contact').on('click',addingForm());
 							});
-						}
-							
-								
-						
+						}				
 				 	return;
 				 	});//closes LAST animation
 				 }); // closes next animation
@@ -167,12 +147,12 @@ $(document).ready(function(){
 
 
 	$('.top').mouseenter(function(){
-
 		$(this).removeClass('animated rubberBand');
 		$(this).removeClass('animated pulse');
 		$(this).addClass('animated wobble').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){ 
 		$(this).removeClass('animated wobble');
 		$(this).addClass('animated pulse');
+		$('.top').addClass('animated wobble');
 	
 		}); //function
 	}); //mouseenter
