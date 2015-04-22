@@ -10,6 +10,7 @@
 -->
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel ='stylesheet' href = 'assets/css/Bootstrap/css/bootstrap.min.css'>
 	<link rel ='sylesheet' href = 'assets/css/Bootstrap/css/bootstrap-theme.min.css'>
 	<link rel='stylesheet' href = "assets/css/main.css">
