@@ -215,17 +215,14 @@ $(document).ready(function(){
     		cache:false,
     		success: function(response){
     			if(response.success){
-	    			confirm(response.message); // you want to add a modal and then take you to the home page when exited
+	    			alert(response.message); // you want to add a modal and then take you to the home page when exited
     			} 
 
-    			 if(response.success === false){ 
-    			 	if($('.error_box').innerHTML !== ''){			 	
+    			 if(response.success === false){    			 				 	
     			 	display_message(response);
     			 	}
-    			}   // for the form validation			    				
+    						    				
     			
-
-
     		function display_message(response){
 	    				var candy = response.message;
 	    				var message = ''; 

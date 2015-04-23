@@ -21,12 +21,14 @@
 		
 
 		if(count($error) == 0){
-
+				
+				$t=time();
+				$t=(date("m-d-Y",$t));
 				$fullname = $_POST['name'];
 				$email = $_POST['email'];
 				$message = $_POST['message'];
 
-			$query = " INSERT INTO email (`name`,`email`,`message`) VALUES ('$fullname','$email', '$message')" ;
+			$query = " INSERT INTO email (`name`,`email`,`message`,`time`) VALUES ('$fullname','$email', '$message','$t')" ;
 
 
 			$result = mysqli_query($connection, $query);
@@ -43,6 +45,7 @@
 			$output['message'] = "Message Failed to Send";
 	}
 
+	//require('assets/send.php');
 	
 	echo json_encode($output);
 
