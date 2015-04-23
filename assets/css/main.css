@@ -21,8 +21,8 @@ section{
 }
 
 #section3{
-	background-image: url(../images/black_wallpaper.jpg);
-	background-size: cover;
+	background-image: url(../images/darkwood.png);
+	background:cover;
 	width:100%;
 	height:1100px;
 	background-attachment: fixed;
@@ -47,7 +47,7 @@ section{
 #section6{
 	background-image:url(../images/planet_earth.jpg);
 	background-attachment: fixed;
-	background:cover;
+	background-size:cover;
 	width:100%;
 	height:100vh;
 }
@@ -63,6 +63,9 @@ section{
 /* Background images */
 
 
+
+
+
 /* Contact Form */
 
 .contact_form_background{
@@ -73,6 +76,25 @@ section{
 .form_position{
 	margin-top:5%;
 }
+
+
+/*.popup{ 
+	display:block;
+	position:fixed;   
+	top:0;			 
+	left:0;
+	background-color: rgba(0,0,0,0.7);
+	width:100%;    	  
+	height:100%;
+	z-index: 1;		  
+}
+
+#popup-wrapper{
+	width:500px;
+	margin:70px auto; 
+	text-align: left;
+}
+*/
 
 /* Contact Form */
 

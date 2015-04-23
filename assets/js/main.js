@@ -49,7 +49,16 @@ $(document).ready(function(){
 		}  
 		if (width > 835){
 			$('.cat_hire').css({'background': 'transparent'});
-		}		
+
+			$('.cat_hire').mouseenter(function(){
+		$(this).css({'background': 'red'});
+	});
+	$('.cat_hire').mouseleave(function(){
+		$(this).css({'background': 'transparent'});
+	});		
+		}	
+
+		
 
 
 	}
@@ -93,7 +102,7 @@ $(document).ready(function(){
 			contact_form.addClass('contact_form_background');
 
 			
-			var form = $('<form>').attr({role:'form', action: 'index.php', method:'post'});
+			var form = $('<form>').attr({role:'form', class:'form_contacts'});
 			form.addClass('form_position');
 			
 			var div1 = $('<div>').addClass('form-group');
@@ -112,7 +121,7 @@ $(document).ready(function(){
 			var textarea = $('<textarea>').attr({name:'message', class:'form-control', rows: '5', placeholder: 'Write your Message Here'});
 			div3.append(labelMessage,textarea);
 
-			var submit = $('<input>').attr({type:'submit',name: 'submit', class:'submit_button btn btn-primary', value: 'Submit'}).css({'float': 'right', 'padding': '6px 55px'});
+			var submit = $('<input>').attr({type:'button',name: 'button', class:'submit_button btn btn-primary', value: 'Submit'}).css({'float': 'right', 'padding': '6px 55px'});
 			var go_back = $('<button>').attr({type:'button', name: 'button', class: 'glyphicon glyphicon-arrow-left'}).css({'position':'relative', 'left': '4%', 'top':'4vh','margin-bottom':'4%'});
 			contact_form.append(go_back)
 			form.append(header,div1,div2,div3,submit);
@@ -187,7 +196,55 @@ $(document).ready(function(){
 
 
 
+	// 	CONTACT FORM AJAX CALL 
 
-	
+	$('body').on('click', '.submit_button', function(){
+		  	var form_contacts = $(".form_contacts");
+        	var form_data={
+	            name: form_contacts.find("input[name=Fullname]").val(),
+	            email: form_contacts.find("input[name=email]").val(),
+	            message: form_contacts.find("textarea[name=message]").val(),
+        	};
+
+	$.ajax(
+    	{
+    		url:'form_validation.php',
+    		data: form_data,
+    		dataType: 'json',
+    		method:'POST',
+    		cache:false,
+    		success: function(response){
+    			if(response.success){
+	    			confirm(response.message); // you want to add a modal and then take you to the home page when exited
+    			} 
+
+    			 if(response.success === false){ 
+    			 	if($('.error_box').innerHTML !== ''){			 	
+    			 	display_message(response);
+    			 	}
+    			}  			    				
+    			
+
+
+    		function display_message(response){
+	    				var candy = response.message;
+	    				var message = ''; 
+	    				var error_box = $('<div>').addClass('error_box').css({'text-align':'center'}); 
+	    				   for(var i in candy){
+	    				  	var error_messages = $('<h1>').html(candy[i]).css({color:'white'});
+	    				  	error_box.append(error_messages);
+	    				 } 
+	    				 	$('.contact_form').append(error_box);		    				 	    				 
+    				}//function
+    		
+
+    		
+
+
+    		} // this closes the success function
+    	});// this closes the ajax call
+	});
+
+
 	
 	}); // CLOSES THE MAIN DOCUMENT
