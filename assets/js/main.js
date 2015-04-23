@@ -222,7 +222,7 @@ $(document).ready(function(){
     			 	if($('.error_box').innerHTML !== ''){			 	
     			 	display_message(response);
     			 	}
-    			}  			    				
+    			}   // for the form validation			    				
     			
 
 
