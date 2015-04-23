@@ -1,6 +1,6 @@
 <?php
 
-	$connection = mysqli_connect('localhost','root', '','portfolio');
+	$connection = mysqli_connect('localhost','root', 'bengals1','portfolio');
 	$error=[];
 	$output=[];
 
