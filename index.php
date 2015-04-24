@@ -79,7 +79,7 @@
 
 					<p>
 						Web Development is one of my passions I've always had. Currently I am a Full-Stack Web Developer 
-						capable of building Web Applications from the ground up using primarily Javascript on the client side
+						capable of building Web Applications from the ground up using primarily Javascript on front end
 						as well as PHP on the server side. I have experience working in project oriented environment focused on
 						coding around many specific technologoies. I am seek contribute all my technical skills for the betterment and enhancement of
 						company goals and their pursuit in delivering innovative and break through products in the market place.
