@@ -1,6 +1,15 @@
 <?php
 
-	$connection = mysqli_connect('ahadwasim.com','root', 'bengals1','portfolio');
+		// $mysqli_connection = new MySQLi('localhost', 'user', 'pass', 'db');
+		// 	if ($mysqli_connection->connect_error) {
+  //  				echo "Not connected, error: " . $mysqli_connection->connect_error;
+  //  				exit;
+		// 	} else {
+  //  				echo "Connected.";
+  //  				exit;
+		// 	}
+
+	require_once('mysql_connect.php');
 	$error=[];
 	$output=[];
 
