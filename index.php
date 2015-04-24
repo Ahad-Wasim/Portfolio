@@ -78,11 +78,12 @@
 					<h2> My personal Background</h2>
 
 					<p>
-						Web Development is one of my passions I've always had. Currently I am a Full-Stack Web Developer 
-						capable of building Web Applications from the ground up using primarily Javascript on front end
-						as well as PHP on the server side. I have experience working in project oriented environment focused on
-						coding around many specific technologoies. I am seek contribute all my technical skills for the betterment and enhancement of
-						company goals and their pursuit in delivering innovative and break through products in the market place.
+						Web Development is one of my passions I've always had growing up. Currently I am a Full-Stack Web Developer 
+						capable of building Dynamic Web and Mobile Applications from the ground up by utilizing Javascript on front-end
+						as well as PHP on the back-end. Along with that I have also been working around team environments my shole lifehave gained
+						the experience to promote collobaration and coordination among my peers. With that being said, I want to incorporate all my technical and mental skills for the
+						potential growth and further advancement for a company as well as to capitalize both my educational and 
+						professional experience. 
 					</p>
 				</div> <!-- background -->
 		</div> <!-- row -->
