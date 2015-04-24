@@ -1,3 +1,9 @@
+@media screen and (min-width: 1600px) {
+	#section3{
+		height:1400px;
+	}
+}
+
 @media screen and (max-width: 1550px) {
    .resume_text{
    	font-size: 21px;
@@ -7,6 +13,7 @@
 	display:inline-block;
 	font-size: 22px;
 	}
+
 }
 
 
@@ -103,7 +110,7 @@
 		height: 172px;
 		width:208px;
 	}
-    
+
 }
 
 
