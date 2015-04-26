@@ -215,7 +215,27 @@ $(document).ready(function(){
     		cache:false,
     		success: function(response){
     			if(response.success){
-	    			alert(response.message); // you want to add a modal and then take you to the home page when exited
+	    			//alert(response.message); // you want to add a modal and then take you to the home page when exited
+    				if($('.contact_form').find('.error_message').length  >= 1){
+	    				 	$('.error_box').html('');
+	    			}
+
+    				var modal_fade = $('<div>').attr({class:'modal fade', role:'dialog'});
+					var modal_dialog = $('<div>').attr({class:'modal-dialog'});
+					var modal_content = $('<div>').attr({class:'modal-content'});
+					var modal_body = $('<div>').attr({class:'modal-body'});
+					var success_message = $('<h1>').html(response.message);
+					modal_body.append(success_message);
+					var modal_footer = $('<div>').attr({class:'modal-footer'});
+					var close_button = $('<a>').attr({class: 'btn btn default', 'data-dismiss': 'modal'}).html('Close');
+					modal_footer.append(close_button);
+
+
+					modal_content.append(modal_body,modal_footer);
+					modal_dialog.append(modal_content);
+					modal_fade.append(modal_dialog);
+
+    				$('.contact_form').append(modal_fade);
     			} 
 
     			 if(response.success === false){    			 				 	
@@ -224,14 +244,18 @@ $(document).ready(function(){
     						    				
     			
     		function display_message(response){
+
+    					if($('.contact_form').find('.error_message').length  >= 1){
+	    				 	$('.error_box').html('');
+	    				}
 	    				var candy = response.message;
-	    				var message = ''; 
 	    				var error_box = $('<div>').addClass('error_box').css({'text-align':'center'}); 
 	    				   for(var i in candy){
-	    				  	var error_messages = $('<h1>').html(candy[i]).css({color:'white'});
+	    				  	var error_messages = $('<h1>').html(candy[i]).css({color:'white'}).addClass('error_message');
 	    				  	error_box.append(error_messages);
 	    				 } 
-	    				 	$('.contact_form').append(error_box);		    				 	    				 
+	    				 		$('.contact_form').append(error_box);		    				 	    				 
+	    				 	
     				}//function
     		
 

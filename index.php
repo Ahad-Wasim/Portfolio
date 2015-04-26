@@ -29,7 +29,7 @@
 
 
 <header>
-	<nav class="navbar navbar-inverse navbar-static-top"> 
+	<nav class="navbar navbar-inverse navbar-fixed-top ">  <!-- navbar-static-top -->
 		<div class = 'container'>
 			<div class = 'navbar-header'>
 				<button type='button' class = 'navbar-toggle' data-toggle='collapse' data-target='#example'>
@@ -314,7 +314,7 @@
 
 	<script src = 'assets/js/jquery-1.11.2.min.js'></script>
 	<script src = "assets/js/main.js"></script>
-	<script src = 'assets/js/stellar.js/jquery.stellar.min.js'></script> 
+	<script src = 'assets/js/stellar.js/jquery.stellar.min.js'></script>  
 	<script src = 'assets/css/Bootstrap/js/bootstrap.min.js'></script>
 	<script src="assets/js/wow_js/wow.js"></script>
 	

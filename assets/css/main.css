@@ -1,5 +1,23 @@
-.navbar{
+/*.navbar{
 	margin-bottom: 0;
+}*/
+
+
+.navbar{
+	padding:5px 0px 5px 0px;
+}
+
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.nav>li>a {
+	font-size:18px;
+}
+
+body { 
+    padding-top: 50px; 
 }
 
 /* Background images */
@@ -282,12 +300,6 @@ section{
 	height:882px;
 	width:100%;
 }
-
-.cheetah{
-	width:100%;
-	height:100%;
-}
-
 
 .quote_text{
 	position:absolute;
