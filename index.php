@@ -6,7 +6,6 @@
 		Date Published: April 18th 2015,
 
 		Interested in Hiring Me  [phone-number: (415)-238-7333, email: ahadwasim@gmail.com]
-
 -->
 
 <head>
