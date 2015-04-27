@@ -43,7 +43,7 @@
 			$result = mysqli_query($connection, $query);
 
 			$output['success'] = true; // this will help us pass the conditional on the ajax call
-			$output['message'] = 'Message Sent';
+			$output['message'] = 'Message Successfuly Sent';
 
 		} else {
 			$output['success']=false;

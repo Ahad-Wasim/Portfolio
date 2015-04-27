@@ -141,7 +141,7 @@ $(document).ready(function(){
 					contact_form.html('');
 				 	$('.main_page').removeClass('bounceOutLeft').addClass('bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ 		
 				 	
-				 		if ( ($.trim($(contact_form).html())=== '')){
+				 		if ( ($.trim($(contact_form).html()) === '')){
 							$('.contact').click(function(){
 								$('.contact').on('click',addingForm());
 							});
@@ -219,28 +219,56 @@ $(document).ready(function(){
     				if($('.contact_form').find('.error_message').length  >= 1){
 	    				 	$('.error_box').html('');
 	    			}
-
-    				var modal_fade = $('<div>').attr({class:'modal fade', role:'dialog'});
+    				
+    				var modal = $('<div>').attr({class:'modal fade', id:'success_modal', role:'dialog', 'data-toggle':'modal'});
 					var modal_dialog = $('<div>').attr({class:'modal-dialog'});
 					var modal_content = $('<div>').attr({class:'modal-content'});
+
+					var modal_header = $('<div>').attr({class:'modal-header'}).html('This is header');
 					var modal_body = $('<div>').attr({class:'modal-body'});
 					var success_message = $('<h1>').html(response.message);
 					modal_body.append(success_message);
 					var modal_footer = $('<div>').attr({class:'modal-footer'});
-					var close_button = $('<a>').attr({class: 'btn btn default', 'data-dismiss': 'modal'}).html('Close');
-					modal_footer.append(close_button);
+					var prev_page = $('<button>').attr({type: 'button', class: 'btn btn-primary back_page', 'data-dismiss': 'modal'}).html('Go back to main page');
+					var close_button = $('<button>').attr({type: 'button', class: 'btn btn-default', 'data-dismiss': 'modal'}).html('Close');
+					modal_footer.append(prev_page,close_button);
 
 
 					modal_content.append(modal_body,modal_footer);
 					modal_dialog.append(modal_content);
-					modal_fade.append(modal_dialog);
+					modal.append(modal_dialog);
 
-    				$('.contact_form').append(modal_fade);
-    			} 
+    				$('body').append(modal);
+    				$('#success_modal').modal('show');
+
+
+    					$(prev_page).on('click',function(){	
+    						setTimeout(function(){go_home();},500);
+    					});
+
+    			} //closes first conditional 
 
     			 if(response.success === false){    			 				 	
     			 	display_message(response);
     			 	}
+
+    		function go_home(){
+    						var contact_form = $('.contact_form');
+							contact_form.removeClass('bounceInRight').addClass('bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){	
+							contact_form.removeClass('contact_form_background');
+							contact_form.html('');
+				 			$('.main_page').removeClass('bounceOutLeft').addClass('bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){ 		
+				 	
+				 			if ( ($.trim($(contact_form).html()) === '')){
+								$('.contact').click(function(){
+									$('.contact').on('click',addingForm());
+								});
+							}				
+				 			return;
+				 			});//closes LAST animation
+							 }); // closes next animation
+						} //closes function
+
     						    				
     			
     		function display_message(response){
@@ -251,7 +279,7 @@ $(document).ready(function(){
 	    				var candy = response.message;
 	    				var error_box = $('<div>').addClass('error_box').css({'text-align':'center'}); 
 	    				   for(var i in candy){
-	    				  	var error_messages = $('<h1>').html(candy[i]).css({color:'white'}).addClass('error_message');
+	    				  	var error_messages = $('<h3>').html(candy[i]).css({color:'white'}).addClass('error_message');
 	    				  	error_box.append(error_messages);
 	    				 } 
 	    				 		$('.contact_form').append(error_box);		    				 	    				 
@@ -264,7 +292,7 @@ $(document).ready(function(){
 
     		} // this closes the success function
     	});// this closes the ajax call
-	});
+	}); //closes the .submit_button click
 
 
 	

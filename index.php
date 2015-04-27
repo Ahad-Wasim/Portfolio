@@ -74,7 +74,7 @@
 <section data-stellar-background-ratio=".5" id="section2" >
 		<div class = 'container-fluid'>
 			<div class = 'row'>
-				<div class =  'col-md-7 col-sm-5  description wow anmated zoomInLeft'>
+				<div class =  'col-md-7 col-sm-5  description wow animated zoomInLeft'>
 					<h2> My personal Background</h2>
 
 					<p>
