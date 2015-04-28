@@ -44,7 +44,7 @@
 				<ul class = 'nav navbar-nav navbar-right'>
 					<li><a class = 'bar-color' href='https://www.linkedin.com/in/ahadwasim' target="_blank">LinkedIn</a></li>
 					<li class = 'bar-color' ><a href='https://github.com/Ahad-Wasim' target="_blank">Github</a></li>
-					<li class = 'bar-color'> <a href = 'assets/images/ahadwasim_resume.docx' download>Resume</a></li>
+					<li class = 'bar-color'> <a href = 'assets/images/ahadwasim_resume.pdf' download>Resume</a></li>
 					<li class = 'bar-color'> <a  class = 'contact' href = '#'>Contact</a></li>
 				</ul>
 			</div>
@@ -74,16 +74,13 @@
 		<div class = 'container-fluid'>
 			<div class = 'row'>
 				<div class =  'col-md-7 col-sm-5  description wow animated zoomInLeft'>
-					<h2> My personal Background</h2>
+					<h2> Background</h2>
 
 					<p>
-						Web Development is one of my passions I've always had growing up. Currently I am a Full-Stack Web Developer 
-						capable of building Dynamic Web and Mobile Applications from the ground up by utilizing Javascript on front-end
-						as well as PHP on the back-end. My current abilities to work in cooperation with teams and individuals has allowed
-						me to consistently achieve goals in the past and develop excellent personal relationships among one another.  With that being said,
-						I want to incorporate all my technical and mental skills for the
-		                potential growth and further advancement for a company as well as to capitalize both my educational and 
-						professional experience. 
+						Growing Up in the Bay Area my how life, Web Development has been one of my passions I've always had. Currently I am a Full-Stack Web Developer capable 
+						of building Web Applications from the ground up using HTML, CSS, and Javascript on the front end as well as PHP in the back. I am a team player who loves
+						to work on projects and is dedicated to providing the highest quality of work at all times. I am dedicated into bringing new energy, fresh ideas
+						and a different way of thinking to everything I do.
 					</p>
 				</div> <!-- background -->
 		</div> <!-- row -->
@@ -239,7 +236,7 @@
 <section data-stellar-background-ratio="1" id="section5">
 		<div class='more_info_text'>
 								
-					<div class = 'resume_contents'>	
+					<div class = 'resume_contents wow animated tada'>	
 						<h2>Project Highlights</h2>
 
 						<h3>Tipify</h3>
@@ -247,7 +244,7 @@
 							An application for tipping restaurant employees and writing reviews about them. Tipify also features a 
 							tipping Calculator which helps the consumer identify the appropriate number each employee should be tipped.
 							
-							<h3 class = 'url'><strong>Note: The app is still a work in process.</strong>URL: <a style ='text-decoration: none' href = 'http://tipify.ahadwasim.com' target='_blank'>Tipify</a></h3>
+							<h3 class = 'url'><strong>Note: The app is still a work in process.</strong>URL: <a style ='text-decoration: none' href = 'https://github.com/Ahad-Wasim/Tipify' target='_blank'>Tipify</a></h3>
 
 							
 						</p>
@@ -278,7 +275,7 @@
 	<div class = 'final'>	
 		<div class = 'markTwain'>
 			<div class = 'mkquote'>
-				<div class = 'work'>
+				<div class = 'work wow animated bounceInRight'>
 					
 					<h3>The secret to getting ahead is getting started.</h3>
 					<h4> - Mark Twain</h4>
