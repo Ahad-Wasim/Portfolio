@@ -79,9 +79,10 @@
 					<p>
 						Web Development is one of my passions I've always had growing up. Currently I am a Full-Stack Web Developer 
 						capable of building Dynamic Web and Mobile Applications from the ground up by utilizing Javascript on front-end
-						as well as PHP on the back-end. Along with that I have also been working around team environments my shole lifehave gained
-						the experience to promote collobaration and coordination among my peers. With that being said, I want to incorporate all my technical and mental skills for the
-						potential growth and further advancement for a company as well as to capitalize both my educational and 
+						as well as PHP on the back-end. My current abilities to work in cooperation with teams and individuals has allowed
+						me to consistently achieve goals in the past and develop excellent personal relationships among one another.  With that being said,
+						I want to incorporate all my technical and mental skills for the
+		                potential growth and further advancement for a company as well as to capitalize both my educational and 
 						professional experience. 
 					</p>
 				</div> <!-- background -->
