@@ -241,10 +241,10 @@
 
 						<h3>Tipify</h3>
 						<p>
-							An application for tipping restaurant employees and writing reviews about them. Tipify also features a 
-							tipping Calculator which helps the consumer identify the appropriate number each employee should be tipped.
-							
-							<h3 class = 'url'><strong>Note: The app is still a work in process.</strong>URL: <a style ='text-decoration: none' href = 'https://github.com/Ahad-Wasim/Tipify' target='_blank'>Tipify</a></h3>
+							An application for tipping restaurant employees and writing reviews about them based on their service provided.
+							Tipify also features a tipping calculator which helps the consumer identify the appropriate number each employee should be tipped. Tipify also allows the consumer
+							to tip their preferred employee on the spot.
+							<h3 class = 'url'><strong>Note: The app is still a work in process  </strong>URL: <a style ='text-decoration: none' href = 'https://github.com/Ahad-Wasim/Tipify' target='_blank'>Tipify</a></h3>
 
 							
 						</p>
