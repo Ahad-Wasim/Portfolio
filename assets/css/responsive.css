@@ -252,6 +252,12 @@
 	}
 }
 
+@media screen and (min-width: 850px) {
+	#section5{
+		height:840px;
+	}
+}
+
 
 @media screen and (max-width: 850px) {
     .h2, h2{
@@ -493,7 +499,7 @@
 
 @media screen and (max-width: 620px) {
 	#section5{
-		height:675px;
+		height:775px;
 	}
 
 	.github{
@@ -697,7 +703,7 @@
 }
 @media screen and (max-width: 500px) {
 	#section5{
-		height:775px;
+		height:870px;
 	}
 }
 
