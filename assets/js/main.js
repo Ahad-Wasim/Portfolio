@@ -95,8 +95,9 @@ $(document).ready(function() {
                 'margin-top': '0px',
                 'color': 'white'
             });
-            var body = document.querySelector('body');
+            var body = document.querySelector('body');                     
             body.style.overflow = 'hidden';
+
             if ($('.contact_form').hasClass('animated')) {
                 var contact_form = $('.contact_form').removeClass('bounceOutRight').addClass('animated bounceInRight');
             } else {
@@ -171,6 +172,7 @@ $(document).ready(function() {
             form.append(header, div1, div2, div3, submit);
             writingFormContainer.append(form);
             contact_form.append(writingFormContainer);
+
             if (contact_form.innerHTML !== '') {
                 $('.contact').off('click');
             }
