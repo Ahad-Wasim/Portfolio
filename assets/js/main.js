@@ -95,6 +95,8 @@ $(document).ready(function() {
                 'margin-top': '0px',
                 'color': 'white'
             });
+            var body = document.querySelector('body');
+            body.style.overflow = 'hidden';
             if ($('.contact_form').hasClass('animated')) {
                 var contact_form = $('.contact_form').removeClass('bounceOutRight').addClass('animated bounceInRight');
             } else {
@@ -176,6 +178,7 @@ $(document).ready(function() {
                 contact_form.removeClass('bounceInRight').addClass('bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                     contact_form.removeClass('contact_form_background');
                     contact_form.html('');
+                    body.style.overflow = 'auto';
                     $('.main_page').removeClass('bounceOutLeft').addClass('bounceInLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
                         if (($.trim($(contact_form).html()) === '')) {
                             $('.contact').click(function() {
@@ -185,7 +188,7 @@ $(document).ready(function() {
                         return;
                     }); //closes LAST animation
                 }); // closes next animation
-            }); //go_back 	
+            }); //go_back   
         } //writing form
     } // this closes addingForm
     $('.top').mouseenter(function() {
@@ -222,7 +225,7 @@ $(document).ready(function() {
             }, 4000);
         } // topScroll
     }); // this closes the click
-    // 	CONTACT FORM AJAX CALL 
+    //  CONTACT FORM AJAX CALL 
     $('body').on('click', '.submit_button', function() {
         var form_contacts = $(".form_contacts");
         var form_data = {
