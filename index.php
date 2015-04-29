@@ -77,9 +77,9 @@
 					<h2> Background</h2>
 
 					<p>
-						Growing Up in the Bay Area my how life, Web Development has been one of my passions I've always had. Currently I am a Full-Stack Web Developer capable 
+						Growing Up in the Bay Area my entire life, Web Development has been one of my passions I've always had. Currently I am a Full-Stack Web Developer capable 
 						of building Web Applications from the ground up using HTML, CSS, and Javascript on the front end as well as PHP in the back. I am a team player who loves
-						to work on projects and is dedicated to providing the highest quality of work at all times. I am dedicated into bringing new energy, fresh ideas
+						to work on projects and is dedicated to providing the highest quality of work at all times. I am committed into bringing new energy, fresh ideas
 						and a different way of thinking to everything I do.
 					</p>
 				</div> <!-- background -->
